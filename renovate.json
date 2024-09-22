@@ -1,28 +1,11 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "@nuxtjs",
-    ":semanticCommits"
-  ],
-  "packageRules": [
-    {
-      "matchPackagePatterns": [
-        "nuxt"
-      ],
-      "groupName": "nuxt"
-    },
-    {
-      "packageNames": [
-        "node"
-      ],
-      "major": {
-        "enabled": true
-      },
-      "separateMultipleMajor": true,
-      "allowedVersions": "^20"
-    }
+    "config:recommended"
   ],
   "baseBranches": [
-    "main"
+    "next"
   ],
   "rangeStrategy": "pin"
 }
+
