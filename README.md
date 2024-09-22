@@ -15,9 +15,6 @@
 - [✨ &nbsp;&nbsp;**Release Notes**](./CHANGELOG.md)
 - [👁 &nbsp;&nbsp;**Example**](https://basics.github.io/vue-sematic-release/example)
 
-Nuxt Booster takes over the Lighthouse performance optimization of your generated website.
-All used components and resources are loaded on demand based on the viewport.
-
 ## Getting Started
 
 Please follow the [📖 &nbsp;&nbsp;**Documentation**](https://basics.github.io/vue-sematic-release/)
