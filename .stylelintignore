@@ -1,0 +1,15 @@
+# Common
+node_modules
+dist
+.nuxt
+coverage
+.reports
+.history
+
+# Files
+**/*.js
+src/runtime/tmpl/fonts.css
+
+# docs
+docs/.vitepress/dist
+docs/.vitepress/cache
