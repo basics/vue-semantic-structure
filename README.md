@@ -1,4 +1,4 @@
-![vue-semantic-structure][logo]
+![vue-semantic-structure][poster]
 
 # Vue Semanatic Structure
 
@@ -46,7 +46,7 @@ Please follow the [📖 &nbsp;&nbsp;**Documentation**](https://basics.github.io/
 
 <!-- Badges -->
 
-[logo]: https://repository-images.githubusercontent.com/265295866/5cf41209-5402-4479-a5f6-29c6b1c0d7ce "vue-sematic-release"
+[poster]: https://github.com/user-attachments/assets/cd78f9d3-f0e0-447b-b43a-e43fec2e5b25 "vue-sematic-release"
 
 [renovate-status-src]: <https://img.shields.io/badge/renovate-enabled-brightgreen>
 [renovate-status-href]: <https://renovate.whitesourcesoftware.com/>
