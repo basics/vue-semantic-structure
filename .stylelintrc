@@ -1,0 +1,46 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-recess-order"
+  ],
+  "customSyntax": "postcss-html",
+  "ignoreFiles": [
+    "./**/*.js"
+  ],
+  "rules": {
+    "no-descending-specificity": null,
+    "value-keyword-case": [
+      "lower",
+      {
+        "camelCaseSvgKeywords": true
+      }
+    ],
+    "function-no-unknown": [
+      true,
+      {
+        "ignoreFunctions": [
+          "lost-vars",
+          "em",
+          "vw"
+        ]
+      }
+    ],
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": [
+          "global",
+          "deep"
+        ]
+      }
+    ],
+    "selector-pseudo-element-no-unknown": [
+      true,
+      {
+        "ignorePseudoElements": [
+          "v-deep"
+        ]
+      }
+    ]
+  }
+}
