@@ -2,13 +2,16 @@ export default {
   nav: [
     { text: 'Home', link: '/' },
     { text: 'Introduction', link: '/introduction' },
-    { text: 'Live Example', link: '/example/' }
+    { text: 'Live Example', link: '/playground/' }
   ],
 
   sidebar: [
     {
       text: 'Guide',
-      items: [{ text: 'Introduction', link: '/introduction' }]
+      items: [
+        { text: 'Introduction', link: '/introduction' },
+        { text: 'Setup', link: '/setup' }
+      ]
     },
     {
       text: 'Composables',

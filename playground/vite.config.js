@@ -8,6 +8,8 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: getBaseUrl(),
+
   plugins: [vue()],
 
   server: {
@@ -21,3 +23,7 @@ export default defineConfig({
     }
   }
 });
+
+function getBaseUrl() {
+  return process.env.npm_config_base_url || process.env.BASE_URL || '/';
+}
