@@ -13,7 +13,7 @@ hero:
       link: /introduction
     - theme: alt
       text: Live Example
-      link: /example/
+      link: /playground/
       
 features:
   - title: Heading
