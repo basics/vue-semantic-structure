@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import useContentContainer from './useContentContainer';
+import useContentContainer from './useContentContainer.js';
 
 export default {
   inheritAttrs: false,
