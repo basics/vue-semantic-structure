@@ -21,8 +21,7 @@ Please follow the [📖 &nbsp;&nbsp;**Documentation**](https://basics.github.io/
 
 ## Requirements
 
-- NodeJS `>= 19`
-- NuxtJS `>= 3.5.0`
+- Vue `>= 3`
 
 ## Features
 
