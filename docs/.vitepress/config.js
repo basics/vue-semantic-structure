@@ -16,6 +16,22 @@ import navigation from './navigation.js';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig(() => ({
+  head: [
+    ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' }],
+
+    ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' }],
+
+    ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' }],
+
+    ['link', { rel: 'manifest', href: '/site.webmanifest' }],
+
+    ['link', { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#f9b44e' }],
+
+    ['meta', { name: 'msapplication-TileColor', content: '#f9b44e' }],
+
+    ['meta', { name: 'theme-color', content: '#f9b44e' }]
+  ],
+
   markdown: {
     config: md => {
       md.use(markdownItInlineComments);
