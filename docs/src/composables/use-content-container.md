@@ -6,13 +6,11 @@
 Optionally, the component [`<ContentContainer>`](../components/content-container) can also be used as a wrapper.  
 :::
 
-The composable `useContentContainer` is used to map the depth of the page structure.
+The composable `useContentContainer()` is used to map the depth of the page structure.
 
-With each call of `useContentContainer()` in nested components, the level of the page structure is increased by one level (`level`).
+With each call of `useContentContainer()` in nested components, the `level` of the element structure is increased by one `level`.
 
 The appropriate HTML element for the page structure is determined based on the `level`. (e.g. `main`, `section`, `article`)
-
-Translated with DeepL.com (free version)
 
 ```vue
 <template>

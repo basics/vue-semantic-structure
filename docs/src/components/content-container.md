@@ -6,11 +6,11 @@
 Optionally, the composable [`useContentContainer`](../composables/use-content-container) can also be used as a wrapper.  
 :::
 
-The `ContentContainer` is used to map the depth of the page structure.
+The `ContentContainer` is used to map the depth of the element structure.
 
-With each nested `ContentContainer` the page structure becomes one level deeper (`level`).
+With each nested `ContentContainer` the element structure becomes one level deeper (`level`).
 
-The appropriate HTML element for the page structure is determined based on the `level`.
+The appropriate HTML element for the page structure is determined based on the `level`. (e.g. `main`, `section`, `article`)
 
 ## Properties
 
