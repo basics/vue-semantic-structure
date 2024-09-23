@@ -1,7 +1,7 @@
 # useContentContainer
 
 ::: tip
-Optional kann auch die Komponente [`<ContentContainer>`](../components/content-container.md) als Wrapper verwendet werden.  
+Optional kann auch die Komponente [`<ContentContainer>`](../components/content-container) als Wrapper verwendet werden.  
 :::
 
 Das Composable `useContentContainer` wird eingesetzt um die Tiefe der Seitenstruktur abzubilden.

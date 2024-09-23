@@ -3,7 +3,7 @@
 ## Introduction
 
 ::: tip
-Optionally, the composable [`useContentContainer`](../composables/use-content-container.md) can also be used as a wrapper.  
+Optionally, the composable [`useContentContainer`](../composables/use-content-container) can also be used as a wrapper.  
 :::
 
 The `ContentContainer` is used to map the depth of the page structure.

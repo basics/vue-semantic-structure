@@ -3,7 +3,7 @@
 ## Introduction
 
 ::: tip
-Optionally, the composable [`useContentHeadline`](../composables/use-content-headline.md) can also be used as a wrapper.  
+Optionally, the composable [`useContentHeadline`](../composables/use-content-headline) can also be used as a wrapper.  
 :::
 
 `ContentHeadline` is used to display the headline structure.
