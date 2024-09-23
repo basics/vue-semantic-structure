@@ -5,7 +5,7 @@ hero:
   name: "Vue Semantic Structure"
   text: "Helper for semantic HTML structure."
   image:
-    src: /logo.svg
+    src: /logo-small.svg
     alt: VitePress
   actions:
     - theme: brand
