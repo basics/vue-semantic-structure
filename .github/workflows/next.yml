@@ -101,6 +101,7 @@ jobs:
           touch playground/dist/.nojekyll
         env:
           BASE_URL: /vue-semantic-structure/playground/
+          VITE_GITHUB_URL: https://github.com/basics/vue-semantic-structure
       - name: Archive Production Artifact
         uses: actions/upload-artifact@v4
         with:

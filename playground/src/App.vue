@@ -149,6 +149,8 @@
     </DebugContainerComposable>
 
     <!-- composable example end -->
+
+    <GithubCorner :url="GITHUB_URL" />
   </div>
 </template>
 
@@ -157,6 +159,9 @@ import DebugContainer from '@/components/DebugContainer.vue';
 import DebugHeadline from '@/components/DebugHeadline.vue';
 import DebugContainerComposable from '@/components/composable/DebugContainer.vue';
 import DebugHeadlineComposable from '@/components/composable/DebugHeadline.vue';
+import GithubCorner from './components/GithubCorner.vue';
+
+const GITHUB_URL = import.meta.env.VITE_GITHUB_URL;
 </script>
 
 <style scoped>
