@@ -2,7 +2,7 @@ export default {
   nav: [
     { text: 'Home', link: '/' },
     { text: 'Introduction', link: '/introduction' },
-    { text: 'Live Example', link: '/playground/' }
+    { text: 'Live Example', link: 'https://basics.github.io/vue-semantic-structure/playground/' }
   ],
 
   sidebar: [

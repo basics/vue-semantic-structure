@@ -13,7 +13,7 @@ hero:
       link: /introduction
     - theme: alt
       text: Live Example
-      link: /playground/
+      link: https://basics.github.io/vue-semantic-structure/playground/
       
 features:
   - title: Heading
