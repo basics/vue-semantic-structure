@@ -1,13 +1,13 @@
 <template>
-  <ContentHeadline v-slot="{ level }" :data-debug="debug ? 'headline' : undefined">
+  <ContentHeadline v-slot="{ currentLevel }" :data-debug="debug ? 'headline' : undefined">
     <slot />
-    <pre v-if="debug" :data-debug-context-level="level" />
+    <pre v-if="debug" :data-debug-current-level="currentLevel" />
   </ContentHeadline>
 </template>
 
 <script setup>
 import { inject } from 'vue';
-import { ContentHeadline } from 'vue-structural-headings';
+import { ContentHeadline } from 'vue-semantic-structure';
 
 const debug = inject('debugHeadings', false);
 </script>

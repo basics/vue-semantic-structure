@@ -19,7 +19,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
-      'vue-structural-headings': path.resolve(__dirname, '../src')
+      'vue-semantic-structure': path.resolve(__dirname, '../src')
     }
   }
 });

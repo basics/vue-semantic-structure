@@ -49,6 +49,16 @@ Available tags for the root structure.
 
 Can be used to overwrite the level.
 
+## v-slot
+
+### default
+
+| Property       | Type     | Description              |
+| -------------- | -------- | ------------------------ |
+| `currentTag`   | `String` | Get current element tag. |
+| `parentLevel`  | `Number` | Get parent level.        |
+| `currentLevel` | `Number` | Get current level.       |
+
 ## Example
 
 ```vue

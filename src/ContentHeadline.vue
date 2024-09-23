@@ -1,8 +1,8 @@
 <template>
   <component v-if="!abstract" :is="currentTag" v-bind="$attrs">
-    <slot :level="level" :parentLevel="parentLevel" :currentTag="currentTag" />
+    <slot :currentTag="currentTag" :parentLevel="parentLevel" :currentLevel="currentLevel" />
   </component>
-  <slot v-else :currentTag="currentTag" :parentLevel="parentLevel" :level="level" />
+  <slot v-else :currentTag="currentTag" :parentLevel="parentLevel" :currentLevel="currentLevel" />
 </template>
 
 <script>
@@ -23,8 +23,8 @@ export default {
   },
 
   setup() {
-    const { parentLevel, level, currentTag } = useContentHeadline();
-    return { parentLevel, level, currentTag };
+    const { parentLevel, currentLevel, currentTag } = useContentHeadline();
+    return { parentLevel, currentLevel, currentTag };
   }
 };
 </script>

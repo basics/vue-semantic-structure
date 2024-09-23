@@ -30,6 +30,16 @@ If set, the heading is rendered as an abstract heading. (e.g. `<slot />`)
 
 Tag for the element.
 
+## v-slot
+
+### default
+
+| Property       | Type     | Description              |
+| -------------- | -------- | ------------------------ |
+| `currentTag`   | `String` | Get current element tag. |
+| `parentLevel`  | `Number` | Get parent level.        |
+| `currentLevel` | `Number` | Get current level.       |
+
 ## Example
 
 ```vue

@@ -6,7 +6,7 @@
       class="structure-debug"
       :data-debug-parent-level="parentLevel"
       :data-debug-level="currentLevel"
-      :data-debug-tag="tag" />
+      :data-debug-current-tag="currentTag" />
   </component>
 </template>
 
@@ -14,7 +14,7 @@
 import { inject, provide } from 'vue';
 import useContentContainer from '../../../../src/useContentContainer';
 
-const { parentLevel, currentLevel, tag } = useContentContainer();
+const { parentLevel, currentLevel, currentTag } = useContentContainer();
 const props = defineProps({
   debug: {
     type: Boolean,

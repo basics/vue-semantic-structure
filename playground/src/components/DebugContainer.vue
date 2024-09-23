@@ -5,14 +5,14 @@
       v-if="isDebug"
       class="structure-debug"
       :data-debug-parent-level="parentLevel"
-      :data-debug-level="currentLevel"
-      :data-debug-tag="currentTag" />
+      :data-debug-current-level="currentLevel"
+      :data-debug-current-tag="currentTag" />
   </ContentContainer>
 </template>
 
 <script setup>
 import { inject, provide } from 'vue';
-import { ContentContainer } from 'vue-structural-headings';
+import { ContentContainer } from 'vue-semantic-structure';
 
 const props = defineProps({
   debug: {
