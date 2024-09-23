@@ -42,7 +42,7 @@ Please follow the [📖 &nbsp;&nbsp;**Documentation**](https://basics.github.io/
 
 <!-- Badges -->
 
-[poster]: https://github.com/user-attachments/assets/6c4cae49-9f79-49f0-86f5-385f1091e39a "vue-sematic-release"
+[poster]: https://github.com/user-attachments/assets/3178bd8c-4d78-40df-81d8-ef9626236217 "vue-sematic-release"
 
 [renovate-status-src]: <https://img.shields.io/badge/renovate-enabled-brightgreen>
 [renovate-status-href]: <https://renovate.whitesourcesoftware.com/>
