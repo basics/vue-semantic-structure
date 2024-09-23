@@ -1,14 +1,24 @@
 {
   "name": "vue-semantic-structure",
+  "version": "1.0.0-next.2",
   "description": "Helper for semantic HTML structure.",
   "private": true,
+  "license": "MIT",
   "author": {
     "name": "Thorn-Welf Walli",
     "email": "lammpee@gmail.com"
   },
-  "version": "1.0.0-next.2",
+  "contributors": [
+    {
+      "name": "Thorn-Welf Walli",
+      "email": "lammpee@gmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/basics/vue-semantic-structure.git"
+  },
   "type": "module",
-  "license": "MIT",
   "exports": {
     ".": {
       "import": "./dist/index.mjs",
