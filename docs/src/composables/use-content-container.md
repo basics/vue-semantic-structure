@@ -1,14 +1,18 @@
 # useContentContainer
 
+## Introduction
+
 ::: tip
-Optional kann auch die Komponente [`<ContentContainer>`](../components/content-container) als Wrapper verwendet werden.  
+Optionally, the component [`<ContentContainer>`](../components/content-container) can also be used as a wrapper.  
 :::
 
-Das Composable `useContentContainer` wird eingesetzt um die Tiefe der Seitenstruktur abzubilden.
+The composable `useContentContainer` is used to map the depth of the page structure.
 
-Mit jedem aufruf von `useContentContainer()` in verschachtelten Komponenten wird die steigt das Level der Seitenstruktur um eine Ebene (`level`).
+With each call of `useContentContainer()` in nested components, the level of the page structure is increased by one level (`level`).
 
-Anhand des `level` wird das passende HTML-Element für die Seitenstruktur ermittelt. (e.g. `main`, `section`, `article`)
+The appropriate HTML element for the page structure is determined based on the `level`. (e.g. `main`, `section`, `article`)
+
+Translated with DeepL.com (free version)
 
 ```vue
 <template>
@@ -28,12 +32,12 @@ const { currentTag } = useContentContainer()
 
 ## Options
 
-| Property      | Type     | Description                                              | Default Value            |
-| ------------- | -------- | -------------------------------------------------------- | ------------------------ |
-| `tag`         | `String` | Der Tag für das HTML-Element. Optional zu überschreiben. | `undefined`              |
-| `contentTags` | `Array`  | Die möglichen contentTags für das HTML-Element.          | `['section', 'article']` |
-| `rootTags`    | `Array`  | Die möglichen Tag-Strukturen für das HTML-Element.       | `['main', undefined]`    |
-| `level`       | `Number` | Der Level für das HTML-Element.                          | `undefined`              |
+| Property      | Type     | Description                               | Default Value            |
+| ------------- | -------- | ----------------------------------------- | ------------------------ |
+| `tag`         | `String` | Can be used to overwrite the tag.         | `undefined`              |
+| `contentTags` | `Array`  | Available tags for the content structure. | `['section', 'article']` |
+| `rootTags`    | `Array`  | Available tags for the root structure.    | `['main', undefined]`    |
+| `level`       | `Number` | Can be used to overwrite the level.       | `undefined`              |
 
 ## Return
 

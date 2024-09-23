@@ -26,21 +26,21 @@ If set, the heading is rendered as an abstract heading. (e.g. `<slot />`)
 - Type: `String`
 - Default: `null`
 
-The tag for the element.
+Tag for the element.
 
 ### contentTags
 
 - Type: `Array`
 - Default: `['section', 'article']`
 
-The available tags for the content structure.
+Available tags for the content structure.
 
 ### rootTags
 
 - Type: `Array`
 - Default: `['main', null]`
 
-The available tags for the root structure.
+Available tags for the root structure.
 
 ### level
 

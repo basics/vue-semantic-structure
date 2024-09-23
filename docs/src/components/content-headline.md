@@ -28,7 +28,7 @@ If set, the heading is rendered as an abstract heading. (e.g. `<slot />`)
 - Type: `String`
 - Default: `null`
 
-The tag for the element.
+Tag for the element.
 
 ## Example
 

@@ -1,14 +1,18 @@
 # useContentContainer
 
+## Introduction
+
 ::: tip
-Optional kann auch die Komponente [`<ContentHeadline>`](../components/content-headline) als Wrapper verwendet werden.  
+Optionally, the component [`<ContentHeadline>`](../components/content-headline) can also be used as a wrapper.  
 :::
 
-Das Composable `useContentContainer` wird eingesetzt um die Tiefe der Seitenstruktur abzubilden.
+`useContentHEadline()` is used to display the headline structure.
 
-Mit jedem aufruf von `useContentContainer()` in verschachtelten Komponenten wird die steigt das Level der Seitenstruktur um eine Ebene (`level`).
+Example: `h1`, `h2`, `h3`, `h4`, `h5`, `h6`
 
-Anhand des `level` wird das passende HTML-Element für die Seitenstruktur ermittelt. (e.g. `main`, `section`, `article`)
+The level of the heading is taken from `useContentContainer()` or `ContentContainer`.
+
+The deeper the nesting, the smaller the heading.
 
 ```vue
 <template>
@@ -27,9 +31,9 @@ const { currentTag } = useContentHeadline()
 
 ## Options
 
-| Property | Type     | Description                    | Default Value |
-| -------- | -------- | ------------------------------ | ------------- |
-| `tag`    | `String` | DDer Tag für das HTML-Element. | `undefined`   |
+| Property | Type     | Description         | Default Value |
+| -------- | -------- | ------------------- | ------------- |
+| `tag`    | `String` | Tag for the element | `undefined`   |
 
 ## Return
 
