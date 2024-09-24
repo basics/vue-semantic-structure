@@ -25,8 +25,8 @@ The main structure is in the `<main>` tag, which contains the main components.
 ```html [HTML]
 <main>
   <header class="hero">…</header>
-  <section class="text-image">…</section>
-  <section class="gallery">…</section>
+  <article class="text-image">…</article>
+  <article class="gallery">…</article>
 </main>
 ```
 
