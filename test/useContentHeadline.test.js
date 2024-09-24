@@ -26,53 +26,40 @@ describe('useContentHeadline', () => {
     const root = defineComponent({
       components: { ContentContainer, ContentHeadline },
       template: `
+  <ContentContainer>
+    <ContentContainer>
+      <ContentHeadline />
       <ContentContainer>
         <ContentHeadline />
+        <ContentContainer>
+          <ContentHeadline />
           <ContentContainer>
+            <ContentHeadline />
             <ContentContainer>
               <ContentHeadline />
               <ContentContainer>
-                <ContentContainer>
-                  <ContentHeadline />
-                  <ContentContainer>
-                    <ContentContainer>
-                      <ContentHeadline />
-                      <ContentContainer>
-                      <ContentContainer>
-                        <ContentHeadline />
-                        <ContentContainer>
-                          <ContentContainer>
-                            <ContentHeadline />
-                          </ContentContainer>
-                        </ContentContainer>
-                      </ContentContainer>
-                      </ContentContainer>
-                    </ContentContainer>
-                  </ContentContainer>
-                </ContentContainer>
+                <ContentHeadline />
               </ContentContainer>
             </ContentContainer>
           </ContentContainer>
-        </ContentContainer>`
+        </ContentContainer>
+      </ContentContainer>
+    </ContentContainer>
+  </ContentContainer>`
     });
 
     const wrapper = mount(root);
+    console.log(wrapper.html());
     expect(wrapper.find('main > h1').text()).toBe(String('h1'));
     expect(wrapper.find('main > article > h2').text()).toBe(String('h2'));
-    expect(wrapper.find('main > article > section > article > h3').text()).toBe(String('h3'));
-    expect(wrapper.find('main > article > section > article > section > article > h4').text()).toBe(String('h4'));
-    expect(
-      wrapper.find('main > article > section > article > section > article  > section > article > h5').text()
-    ).toBe(String('h5'));
-    expect(
-      wrapper
-        .find('main > article > section > article > section > article  > section > article  > section > article > h6')
-        .text()
-    ).toBe(String('h6'));
+    expect(wrapper.find('main > article > section > h3').text()).toBe(String('h3'));
+    expect(wrapper.find('main > article > section > article > h4').text()).toBe(String('h4'));
+    expect(wrapper.find('main > article > section > article > section > h5').text()).toBe(String('h5'));
+    expect(wrapper.find('main > article > section > article > section > article > h6').text()).toBe(String('h6'));
     expect(
       wrapper
         .find(
-          '[data-current-level="1"] > [data-current-level="3"] > [data-current-level="4"] > [data-current-level="5"] > [data-current-level="6"] > [data-current-level="7"] > [data-current-level="8"] > [data-current-level="9"] > [data-current-level="10"] > [data-current-level="11"] > h6'
+          '[data-current-level="1"] > [data-current-level="3"] > [data-current-level="4"] > [data-current-level="5"] > [data-current-level="6"] > [data-current-level="7"] > h6'
         )
         .text()
     ).toBe(String('h6'));
