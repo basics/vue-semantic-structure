@@ -1,4 +1,8 @@
-# ContentContainer
+---
+title: ContentHeadline
+---
+
+# {{$frontmatter.title}}
 
 ## Introduction
 

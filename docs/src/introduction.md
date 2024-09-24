@@ -1,5 +1,8 @@
+---
+title: Introduction
+---
 
-# Introduction
+# {{$frontmatter.title}}
 
 ## What does Vue Structural Headings do?
 
