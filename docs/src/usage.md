@@ -32,7 +32,7 @@ The main structure is in the `<main>` tag, which contains the main components.
 
 :::
 
-## Advance Usage
+## Extended example
 
 The behavior of the `ContentContainer` can also be adapted for blog article pages.
 
