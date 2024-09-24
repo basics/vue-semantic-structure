@@ -1,5 +1,13 @@
 # Project Changelog
 
+# [1.0.0-next.5](https://github.com/basics/vue-semantic-structure/compare/v1.0.0-next.4...v1.0.0-next.5) (2024-09-24)
+
+
+### Bug Fixes
+
+* **(update:** fix useContentContainer; clean ([7c203b5](https://github.com/basics/vue-semantic-structure/commit/7c203b5c3995fc28171d8265fe99e223bd8267ca))
+* **update:** adde inherit props; update docs ([e3a5c2e](https://github.com/basics/vue-semantic-structure/commit/e3a5c2e72083f7b6fd314422eeabb050a8fcdd5d))
+
 # [1.0.0-next.4](https://github.com/basics/vue-semantic-structure/compare/v1.0.0-next.3...v1.0.0-next.4) (2024-09-24)
 
 
