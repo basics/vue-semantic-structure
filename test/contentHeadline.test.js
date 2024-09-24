@@ -15,6 +15,7 @@ describe('contentHeadline', () => {
       components: { ContentContainer, ContentHeadline: DebugContentHeadline },
       template: `
   <ContentContainer>
+    <ContentHeadline />
     <ContentContainer>
       <ContentHeadline />
       <ContentContainer>
@@ -25,9 +26,6 @@ describe('contentHeadline', () => {
             <ContentHeadline />
             <ContentContainer>
               <ContentHeadline />
-              <ContentContainer>
-                <ContentHeadline />
-              </ContentContainer>
             </ContentContainer>
           </ContentContainer>
         </ContentContainer>

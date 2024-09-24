@@ -1,6 +1,6 @@
 <template>
   <div>
-    <DefaultContentContainer debug>
+    <BasicContentContainer debug>
       <header>
         <DebugHeadline>Stage</DebugHeadline>
         <p>
@@ -9,56 +9,54 @@
         </p>
         <pre class="structure-debug" data-debug-current-tag="header"></pre>
       </header>
-      <DefaultContentContainer>
-        <DefaultContentContainer>
-          <DebugHeadline>Text Component</DebugHeadline>
-          <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-            sea takimata sanctus est Lorem ipsum dolor sit amet.
-          </p>
-        </DefaultContentContainer>
-        <DefaultContentContainer>
-          <DebugHeadline>Gallery Component</DebugHeadline>
-          <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-            dolore magna aliquyam.
-          </p>
-          <div class="gallery columns-4">
-            <div v-for="(item, index) in Array(4)" :key="index"></div>
-          </div>
-        </DefaultContentContainer>
-        <DefaultContentContainer>
-          <DebugHeadline>Teasers Component</DebugHeadline>
-          <div class="columns-3">
-            <DefaultContentContainer>
-              <DebugHeadline>Teaser 1</DebugHeadline>
-              <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                labore et dolore magna aliquyam erat, sed diam voluptua.
-              </p>
-            </DefaultContentContainer>
-            <DefaultContentContainer>
-              <DebugHeadline>Teaser 2</DebugHeadline>
-              <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                labore et dolore magna aliquyam erat, sed diam voluptua.
-              </p>
-            </DefaultContentContainer>
-            <DefaultContentContainer>
-              <DebugHeadline>Teaser 3</DebugHeadline>
-              <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                labore et dolore magna aliquyam erat, sed diam voluptua.
-              </p>
-            </DefaultContentContainer>
-          </div>
-        </DefaultContentContainer>
-      </DefaultContentContainer>
-    </DefaultContentContainer>
+      <BasicContentContainer>
+        <DebugHeadline>Text Component</DebugHeadline>
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+          clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+          consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+          takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+      </BasicContentContainer>
+      <BasicContentContainer>
+        <DebugHeadline>Gallery Component</DebugHeadline>
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+          dolore magna aliquyam.
+        </p>
+        <div class="gallery columns-4">
+          <div v-for="(item, index) in Array(4)" :key="index"></div>
+        </div>
+      </BasicContentContainer>
+      <BasicContentContainer>
+        <DebugHeadline>Teasers Component</DebugHeadline>
+        <div class="columns-3">
+          <BasicContentContainer>
+            <DebugHeadline>Teaser 1</DebugHeadline>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+              et dolore magna aliquyam erat, sed diam voluptua.
+            </p>
+          </BasicContentContainer>
+          <BasicContentContainer>
+            <DebugHeadline>Teaser 2</DebugHeadline>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+              et dolore magna aliquyam erat, sed diam voluptua.
+            </p>
+          </BasicContentContainer>
+          <BasicContentContainer>
+            <DebugHeadline>Teaser 3</DebugHeadline>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+              et dolore magna aliquyam erat, sed diam voluptua.
+            </p>
+          </BasicContentContainer>
+        </div>
+      </BasicContentContainer>
+    </BasicContentContainer>
 
     <hr />
 
@@ -130,7 +128,7 @@
 import DebugHeadline from '@/components/DebugHeadline.vue';
 import GithubCorner from './components/GithubCorner.vue';
 import ArticleContentContainer from './components/ArticleContentContainer.vue';
-import DefaultContentContainer from './components/DefaultContentContainer.vue';
+import BasicContentContainer from './components/BasicContentContainer.vue';
 
 const GITHUB_URL = import.meta.env.VITE_GITHUB_URL;
 </script>

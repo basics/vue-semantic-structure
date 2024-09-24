@@ -34,13 +34,13 @@ export default {
     contentTags: {
       type: Array,
       default() {
-        return ['section', 'article'];
+        return ['article', 'section'];
       }
     },
     rootTags: {
       type: Array,
       default() {
-        return ['main', null];
+        return ['main'];
       }
     },
     level: {

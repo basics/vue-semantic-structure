@@ -33,27 +33,22 @@ If `ContentContainer` is level 2, `ContentHeadline` level 2 is rendered as `h2`.
   <div>
     <header>Header</header>
     <ContentContainer>
-      <div>
+      <header>
         <ContentHeadline> Primary Headline (h1) </ContentHeadline>
-      </div>
+      </header>
       <ContentContainer>
         <ContentHeadline> Secondary Headline 1 (h2) </ContentHeadline>
         <ContentContainer>
-          <ContentContainer>
-            <ContentHeadline> Tertiary Headline 1.1 (h3) </ContentHeadline>
-          </ContentContainer>
-          <ContentContainer>
-            <ContentHeadline> Tertiary Headline 1.2 (h3) </ContentHeadline>
-          </ContentContainer>
+          <ContentHeadline> Tertiary Headline 1.1 (h3) </ContentHeadline>
+        </ContentContainer>
+        <ContentContainer>
+          <ContentHeadline> Tertiary Headline 1.2 (h3) </ContentHeadline>
         </ContentContainer>
       </ContentContainer>
-    </ContentContainer>
       <ContentContainer>
         <ContentHeadline> Secondary Headline 2 (h2) </ContentHeadline>
         <ContentContainer>
-          <ContentContainer>
-            <ContentHeadline> Tertiary Headline 2.1 (h3) </ContentHeadline>
-          </ContentContainer>
+          <ContentHeadline> Tertiary Headline 2.1 (h3) </ContentHeadline>
         </ContentContainer>
       </ContentContainer>
     </ContentContainer>
@@ -66,26 +61,22 @@ If `ContentContainer` is level 2, `ContentHeadline` level 2 is rendered as `h2`.
 <div>
   <header>Header</header>
   <main>
-    <div>
+    <header>
       <h1> Primary Headline (h1) </h1>
-    </div>
+    </header>
     <article>
       <h2> Secondary Headline 1 (h2) </h2>
       <section>
-        <article>
-          <h3> Tertiary Headline 1.1 (h3) </h3>
-        </article>
-        <article>
-          <h3> Tertiary Headline 1.2 (h3) </h3>
-        </article>
+        <h3> Tertiary Headline 1.1 (h3) </h3>
+      </section>
+      <section>
+        <h3> Tertiary Headline 1.2 (h3) </h3>
       </section>
     </article>
     <article>
       <h2> Secondary Headline 2 (h2) </h2>
       <section>
-        <article>
-          <h3> Tertiary Headline 2.1 (h3) </h3>
-        </article>
+        <h3> Tertiary Headline 2.1 (h3) </h3>
       </section>
     </article>
   </main>

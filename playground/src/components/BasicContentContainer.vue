@@ -1,7 +1,6 @@
 <template>
   <ContentContainer
-    :contentTags="['section', 'article']"
-    :rootTags="['main', undefined]"
+    :rootTags="['main']"
     v-slot="{ parentLevel, currentLevel, currentTag }"
     :data-debug="isDebug ? 'container' : undefined">
     <slot />

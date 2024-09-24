@@ -36,7 +36,7 @@ describe('useContentContainer', () => {
 
     const wrapper = mount(root);
     expect(wrapper.find(`main>article>section>article>section`).text()).toBe('Test');
-    const needsd = ['main', null, 'article'];
+    const needsd = ['main', 'article'];
     needsd.forEach((tag, index) => {
       if (tag) {
         expect(wrapper.find(`[data-current-level="${index + 1}"]`).attributes('data-parent-level')).toBe(String(index));

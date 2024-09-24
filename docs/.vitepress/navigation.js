@@ -10,7 +10,8 @@ export default {
       text: 'Guide',
       items: [
         { text: 'Introduction', link: '/introduction' },
-        { text: 'Setup', link: '/setup' }
+        { text: 'Setup', link: '/setup' },
+        { text: 'Usage', link: '/usage' }
       ]
     },
     {
