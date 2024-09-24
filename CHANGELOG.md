@@ -1,5 +1,13 @@
 # Project Changelog
 
+# [1.0.0-next.3](https://github.com/basics/vue-semantic-structure/compare/v1.0.0-next.2...v1.0.0-next.3) (2024-09-24)
+
+
+### Bug Fixes
+
+* **publish:** activate publish ([0fd9e49](https://github.com/basics/vue-semantic-structure/commit/0fd9e496d74a4b46ab9fd727aa89492c5ad717be))
+* **update:** added new example; change level logic ([714d921](https://github.com/basics/vue-semantic-structure/commit/714d9213f19738380a11d8fac22834d0605848a6))
+
 # [1.0.0-next.2](https://github.com/basics/vue-semantic-structure/compare/v1.0.0-next.1...v1.0.0-next.2) (2024-09-23)
 
 
