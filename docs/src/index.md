@@ -16,9 +16,11 @@ hero:
       link: https://basics.github.io/vue-semantic-structure/playground/
       
 features:
-  - title: Heading
+  - title: Automated
     details: Automatic heading levels (`h1`, `h2`, `h3`, `h4`, `h5`, `h6`)
-  - title: HTML Container
+  - title: Standard
+    details: Standardize the headline structure on large projects.
+  - title: HTML Structure
     details: Easy way to build sematic html structure (`main`, `article`, `section`)
 ---
 

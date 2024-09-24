@@ -25,8 +25,9 @@ Please follow the [📖 &nbsp;&nbsp;**Documentation**](https://basics.github.io/
 
 ## Features
 
-- Automatic heading levels (`h1`, `h2`, `h3`, `h4`, `h5`, `h6`)
-- Easy way to build semantic html structure (`main`, `article`, `section`)
+- 🚀 Standardize the headline structure on large projects.
+- ✨ Automatic heading levels (`h1`, `h2`, `h3`, `h4`, `h5`, `h6`)
+- 🏗️ Easy way to build semantic html structure (`main`, `article`, `section`)
 
 📖 &nbsp;&nbsp;[Read more](https://basics.github.io/vue-semantic-structure/)
 

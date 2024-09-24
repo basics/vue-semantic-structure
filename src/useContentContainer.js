@@ -2,7 +2,7 @@ import { provide, inject, computed } from 'vue';
 
 export default function useContentContainer({ tag, contentTags, rootTags, level } = {}) {
   tag = tag || null;
-  rootTags = rootTags || inject('contentTags', ['main']);
+  rootTags = rootTags || inject('rootTags', ['main']);
   contentTags = contentTags || inject('contentTags', ['article', 'section']);
   level = level || undefined;
 

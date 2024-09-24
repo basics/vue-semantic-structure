@@ -1,6 +1,6 @@
 <template>
   <div>
-    <BasicContentContainer debug>
+    <DebugContainer debug>
       <header>
         <DebugHeadline>Stage</DebugHeadline>
         <p>
@@ -9,7 +9,7 @@
         </p>
         <pre class="structure-debug" data-debug-current-tag="header"></pre>
       </header>
-      <BasicContentContainer>
+      <DebugContainer>
         <DebugHeadline>Text Component</DebugHeadline>
         <p>
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
@@ -19,8 +19,8 @@
           sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
           takimata sanctus est Lorem ipsum dolor sit amet.
         </p>
-      </BasicContentContainer>
-      <BasicContentContainer>
+      </DebugContainer>
+      <DebugContainer>
         <DebugHeadline>Gallery Component</DebugHeadline>
         <p>
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
@@ -29,45 +29,45 @@
         <div class="gallery columns-4">
           <div v-for="(item, index) in Array(4)" :key="index"></div>
         </div>
-      </BasicContentContainer>
-      <BasicContentContainer>
+      </DebugContainer>
+      <DebugContainer>
         <DebugHeadline>Teasers Component</DebugHeadline>
         <div class="columns-3">
-          <BasicContentContainer>
+          <DebugContainer>
             <DebugHeadline>Teaser 1</DebugHeadline>
             <p>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
               et dolore magna aliquyam erat, sed diam voluptua.
             </p>
-          </BasicContentContainer>
-          <BasicContentContainer>
+          </DebugContainer>
+          <DebugContainer>
             <DebugHeadline>Teaser 2</DebugHeadline>
             <p>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
               et dolore magna aliquyam erat, sed diam voluptua.
             </p>
-          </BasicContentContainer>
-          <BasicContentContainer>
+          </DebugContainer>
+          <DebugContainer>
             <DebugHeadline>Teaser 3</DebugHeadline>
             <p>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
               et dolore magna aliquyam erat, sed diam voluptua.
             </p>
-          </BasicContentContainer>
+          </DebugContainer>
         </div>
-      </BasicContentContainer>
-    </BasicContentContainer>
+      </DebugContainer>
+    </DebugContainer>
 
     <hr />
 
-    <ArticleContentContainer debug>
-      <ArticleContentContainer>
+    <DebugArticleContentContainer debug>
+      <DebugArticleContentContainer>
         <header>
           <DebugHeadline>Article Title</DebugHeadline>
           <pre class="structure-debug" data-debug-current-tag="header"></pre>
         </header>
 
-        <ArticleContentContainer>
+        <DebugArticleContentContainer>
           <div>
             <DebugHeadline>Introduction</DebugHeadline>
             <p>
@@ -76,9 +76,9 @@
               Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
             </p>
           </div>
-        </ArticleContentContainer>
+        </DebugArticleContentContainer>
 
-        <ArticleContentContainer>
+        <DebugArticleContentContainer>
           <div>
             <DebugHeadline>Description</DebugHeadline>
             <p>
@@ -87,38 +87,38 @@
               Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
             </p>
           </div>
-        </ArticleContentContainer>
+        </DebugArticleContentContainer>
 
-        <ArticleContentContainer>
+        <DebugArticleContentContainer>
           <div>
             <DebugHeadline>More Articles</DebugHeadline>
           </div>
           <div class="columns-3">
-            <ArticleContentContainer>
+            <DebugArticleContentContainer>
               <DebugHeadline>Article 1</DebugHeadline>
               <p>
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
                 labore et dolore magna aliquyam erat, sed diam voluptua.
               </p>
-            </ArticleContentContainer>
-            <ArticleContentContainer>
+            </DebugArticleContentContainer>
+            <DebugArticleContentContainer>
               <DebugHeadline>Article 2</DebugHeadline>
               <p>
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
                 labore et dolore magna aliquyam erat, sed diam voluptua.
               </p>
-            </ArticleContentContainer>
-            <ArticleContentContainer>
+            </DebugArticleContentContainer>
+            <DebugArticleContentContainer>
               <DebugHeadline>Article 3</DebugHeadline>
               <p>
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
                 labore et dolore magna aliquyam erat, sed diam voluptua.
               </p>
-            </ArticleContentContainer>
+            </DebugArticleContentContainer>
           </div>
-        </ArticleContentContainer>
-      </ArticleContentContainer>
-    </ArticleContentContainer>
+        </DebugArticleContentContainer>
+      </DebugArticleContentContainer>
+    </DebugArticleContentContainer>
 
     <GithubCorner :url="GITHUB_URL" />
   </div>
@@ -127,8 +127,8 @@
 <script setup>
 import DebugHeadline from '@/components/DebugHeadline.vue';
 import GithubCorner from './components/GithubCorner.vue';
-import ArticleContentContainer from './components/ArticleContentContainer.vue';
-import BasicContentContainer from './components/BasicContentContainer.vue';
+import DebugArticleContentContainer from './components/DebugArticleContentContainer.vue';
+import DebugContainer from './components/DebugContainer.vue';
 
 const GITHUB_URL = import.meta.env.VITE_GITHUB_URL;
 </script>
