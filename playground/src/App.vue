@@ -7,6 +7,7 @@
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
           dolore magna aliquyam…
         </p>
+        <pre class="structure-debug" data-debug-current-tag="header"></pre>
       </header>
       <DefaultContentContainer>
         <DefaultContentContainer>
@@ -65,6 +66,7 @@
       <ArticleContentContainer>
         <header>
           <DebugHeadline>Article Title</DebugHeadline>
+          <pre class="structure-debug" data-debug-current-tag="header"></pre>
         </header>
 
         <ArticleContentContainer>
@@ -152,11 +154,6 @@ h3 {
 
 h4 {
   font-size: calc(50px * var(--factor));
-}
-
-[data-debug] {
-  padding: 20px 10px;
-  margin: 20px 10px;
 }
 
 .columns-3 {
