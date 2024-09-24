@@ -45,15 +45,13 @@ Tag for the element.
 ```vue
 <template>
   <ContentContainer>
-    <div>
+    <header>
       <ContentHeadline> Primary Headline (h1) </ContentHeadline>
-    </div>
+    </header>
     <ContentContainer>
       <ContentHeadline> Secondary Headline (h2) </ContentHeadline>
       <ContentContainer>
-        <ContentContainer>
-          <ContentHeadline> Tertiary Headline (h3) </ContentHeadline>
-        </ContentContainer>
+        <ContentHeadline> Tertiary Headline (h3) </ContentHeadline>
       </ContentContainer>
     </ContentContainer>
   </ContentContainer>
@@ -62,15 +60,13 @@ Tag for the element.
 
 ```html
 <main>
-  <div>
+  <header>
     <h1> Primary Headline (h1) </h1>
-  </div>
+  </header>
   <article>
     <h2> Secondary Headline (h2) </h2>
     <section>
-      <article>
-        <h3> Tertiary Headline (h3) </h3>
-      </article>
+      <h3> Tertiary Headline (h3) </h3>
     </section>
   </article>
 </main>

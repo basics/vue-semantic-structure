@@ -17,6 +17,7 @@
 </template>
 
 <script>
+import { inject } from 'vue';
 import useContentContainer from './useContentContainer.js';
 
 export default {
@@ -31,16 +32,16 @@ export default {
       type: String,
       default: null
     },
-    contentTags: {
-      type: Array,
-      default() {
-        return ['article', 'section'];
-      }
-    },
     rootTags: {
       type: Array,
       default() {
-        return ['main'];
+        return inject('rootTags', ['main']);
+      }
+    },
+    contentTags: {
+      type: Array,
+      default() {
+        return inject('contentTags', ['article', 'section']);
       }
     },
     level: {

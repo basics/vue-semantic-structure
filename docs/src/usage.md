@@ -12,14 +12,6 @@ The main structure is in the `<main>` tag, which contains the main components.
 
 ::: code-group
 
-```html [HTML]
-<main>
-  <header class="hero">…</header>
-  <section class="text-image">…</section>
-  <section class="gallery">…</section>
-</main>
-```
-
 ```vue [Vue]
 <template>
   <ContentContainer>
@@ -28,6 +20,14 @@ The main structure is in the `<main>` tag, which contains the main components.
     <ContentContainer class="gallery">…</ContentContainer>
   </ContentContainer>
 </template>
+```
+
+```html [HTML]
+<main>
+  <header class="hero">…</header>
+  <section class="text-image">…</section>
+  <section class="gallery">…</section>
+</main>
 ```
 
 :::
@@ -60,16 +60,6 @@ In comparison to the basic application, the entire content is enclosed in anothe
 
 ::: code-group
 
-```html [HTML]
-<main>
-  <article>
-    <header class="hero">…</header>
-    <section class="text-image">…</section>
-    <section class="gallery">…</section>
-  </article>
-</main>
-```
-
 ```vue [Vue]
 <template>
   <CustomContentContainer>
@@ -80,6 +70,16 @@ In comparison to the basic application, the entire content is enclosed in anothe
     </CustomContentContainer>
   </CustomContentContainer>
 </template>
+```
+
+```html [HTML]
+<main>
+  <article>
+    <header class="hero">…</header>
+    <section class="text-image">…</section>
+    <section class="gallery">…</section>
+  </article>
+</main>
 ```
 
 :::

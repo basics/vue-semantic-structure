@@ -2,9 +2,12 @@ import { provide, inject, computed } from 'vue';
 
 export default function useContentContainer({ tag, contentTags, rootTags, level } = {}) {
   tag = tag || null;
-  contentTags = contentTags || ['article', 'section'];
-  rootTags = rootTags || ['main'];
+  rootTags = rootTags || inject('contentTags', ['main']);
+  contentTags = contentTags || inject('contentTags', ['article', 'section']);
   level = level || undefined;
+
+  provide('rootTags', rootTags);
+  provide('contentTags', contentTags);
 
   const parentLevel = inject('parentLevel', 0);
   const currentLevel = computed(() => (level !== undefined ? level : parentLevel + 1));
