@@ -13,13 +13,14 @@ export default function useContentContainer({ tag, contentTags, rootTags, level 
     if (tag) {
       return tag;
     }
-    if (rootTags[Number(parentLevel)] !== undefined) {
+    if (Number(parentLevel) in rootTags) {
       return rootTags[Number(parentLevel)];
     }
 
     return contentTags[currentLevel.value % contentTags.length];
   });
 
+  provide('rootLevel', rootTags.length);
   provide('parentLevel', currentLevel.value);
 
   return {

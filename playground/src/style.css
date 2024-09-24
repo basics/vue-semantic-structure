@@ -94,7 +94,7 @@
       font-weight: bold;
       color: var(--tag-color-fg);
       pointer-events: none;
-      content: attr(data-debug-current-tag) ' - pLevel: ' attr(data-debug-parent-level) ' - Level: ' attr(data-debug-level);
+      content: attr(data-debug-current-tag) ' - pLevel: ' attr(data-debug-parent-level) ' - Level: ' attr(data-debug-current-level);
       background: var(--tag-color-bg);
     }
   }

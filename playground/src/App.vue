@@ -1,188 +1,181 @@
 <template>
   <div>
-    <!-- component example start -->
-
-    <DebugContainer debug>
-      <div>
-        <DebugHeadline>Headline</DebugHeadline>
-      </div>
-      <DebugContainer>
-        <!-- Component 1 -->
-        <DebugContainer>
-          <DebugHeadline>Headline 1</DebugHeadline>
-
-          <DebugContainer>
-            <DebugContainer>
-              <DebugHeadline>Headline 1.1</DebugHeadline>
-            </DebugContainer>
-            <DebugContainer>
-              <DebugHeadline>Headline 1.2</DebugHeadline>
-            </DebugContainer>
-            <DebugContainer>
-              <DebugHeadline>Headline 1.3</DebugHeadline>
-
-              <DebugContainer>
-                <DebugContainer>
-                  <DebugHeadline>Headline 1.3.1</DebugHeadline>
-                </DebugContainer>
-                <DebugContainer>
-                  <DebugHeadline>Headline 1.3.2</DebugHeadline>
-                </DebugContainer>
-                <DebugContainer>
-                  <DebugHeadline>Headline 1.3.3</DebugHeadline>
-
-                  <DebugContainer>
-                    <DebugContainer>
-                      <DebugHeadline>Headline 1.3.3.1</DebugHeadline>
-                    </DebugContainer>
-                    <DebugContainer>
-                      <DebugHeadline>Headline 1.3.3.2</DebugHeadline>
-                    </DebugContainer>
-                    <DebugContainer>
-                      <DebugHeadline>Headline 1.3.3.3</DebugHeadline>
-
-                      <DebugContainer>
-                        <DebugContainer>
-                          <DebugHeadline>Headline 1.3.3.3.1</DebugHeadline>
-                        </DebugContainer>
-                        <DebugContainer>
-                          <DebugHeadline>Headline 1.3.3.3.2</DebugHeadline>
-                        </DebugContainer>
-                        <DebugContainer>
-                          <DebugHeadline>Headline 1.3.3.3.3</DebugHeadline>
-                        </DebugContainer>
-                      </DebugContainer>
-                    </DebugContainer>
-                  </DebugContainer>
-                </DebugContainer>
-              </DebugContainer>
-            </DebugContainer>
-          </DebugContainer>
-        </DebugContainer>
-
-        <!-- Component 2 -->
-        <DebugContainer>
-          <DebugHeadline>Headline 2</DebugHeadline>
-        </DebugContainer>
-
-        <!-- Component 3 -->
-        <DebugContainer>
-          <DebugHeadline>Headline 3</DebugHeadline>
-        </DebugContainer>
-      </DebugContainer>
-    </DebugContainer>
-
-    <!-- component example end -->
+    <DefaultContentContainer debug>
+      <header>
+        <DebugHeadline>Stage</DebugHeadline>
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+          dolore magna aliquyam…
+        </p>
+      </header>
+      <DefaultContentContainer>
+        <DefaultContentContainer>
+          <DebugHeadline>Text Component</DebugHeadline>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+            sea takimata sanctus est Lorem ipsum dolor sit amet.
+          </p>
+        </DefaultContentContainer>
+        <DefaultContentContainer>
+          <DebugHeadline>Gallery Component</DebugHeadline>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore magna aliquyam.
+          </p>
+          <div class="gallery columns-4">
+            <div v-for="(item, index) in Array(4)" :key="index"></div>
+          </div>
+        </DefaultContentContainer>
+        <DefaultContentContainer>
+          <DebugHeadline>Teasers Component</DebugHeadline>
+          <div class="columns-3">
+            <DefaultContentContainer>
+              <DebugHeadline>Teaser 1</DebugHeadline>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat, sed diam voluptua.
+              </p>
+            </DefaultContentContainer>
+            <DefaultContentContainer>
+              <DebugHeadline>Teaser 2</DebugHeadline>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat, sed diam voluptua.
+              </p>
+            </DefaultContentContainer>
+            <DefaultContentContainer>
+              <DebugHeadline>Teaser 3</DebugHeadline>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat, sed diam voluptua.
+              </p>
+            </DefaultContentContainer>
+          </div>
+        </DefaultContentContainer>
+      </DefaultContentContainer>
+    </DefaultContentContainer>
 
     <hr />
 
-    <!-- composable example start -->
+    <ArticleContentContainer debug>
+      <ArticleContentContainer>
+        <header>
+          <DebugHeadline>Article Title</DebugHeadline>
+        </header>
 
-    <DebugContainerComposable debug>
-      <div>
-        <DebugHeadlineComposable>Headline</DebugHeadlineComposable>
-      </div>
-      <DebugContainerComposable>
-        <!-- Component 1 -->
-        <DebugContainerComposable>
-          <DebugHeadlineComposable>Headline 1</DebugHeadlineComposable>
+        <ArticleContentContainer>
+          <div>
+            <DebugHeadline>Introduction</DebugHeadline>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+              et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+        </ArticleContentContainer>
 
-          <DebugContainerComposable>
-            <DebugContainerComposable>
-              <DebugHeadlineComposable>Headline 1.1</DebugHeadlineComposable>
-            </DebugContainerComposable>
-            <DebugContainerComposable>
-              <DebugHeadlineComposable>Headline 1.2</DebugHeadlineComposable>
-            </DebugContainerComposable>
-            <DebugContainerComposable>
-              <DebugHeadlineComposable>Headline 1.3</DebugHeadlineComposable>
+        <ArticleContentContainer>
+          <div>
+            <DebugHeadline>Description</DebugHeadline>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+              et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+        </ArticleContentContainer>
 
-              <DebugContainerComposable>
-                <DebugContainerComposable>
-                  <DebugHeadlineComposable>Headline 1.3.1</DebugHeadlineComposable>
-                </DebugContainerComposable>
-                <DebugContainerComposable>
-                  <DebugHeadlineComposable>Headline 1.3.2</DebugHeadlineComposable>
-                </DebugContainerComposable>
-                <DebugContainerComposable>
-                  <DebugHeadlineComposable>Headline 1.3.3</DebugHeadlineComposable>
-
-                  <DebugContainerComposable>
-                    <DebugContainerComposable>
-                      <DebugHeadlineComposable>Headline 1.3.3.1</DebugHeadlineComposable>
-                    </DebugContainerComposable>
-                    <DebugContainerComposable>
-                      <DebugHeadlineComposable>Headline 1.3.3.2</DebugHeadlineComposable>
-                    </DebugContainerComposable>
-                    <DebugContainerComposable>
-                      <DebugHeadlineComposable>Headline 1.3.3.3</DebugHeadlineComposable>
-
-                      <DebugContainerComposable>
-                        <DebugContainerComposable>
-                          <DebugHeadlineComposable>Headline 1.3.3.3.1</DebugHeadlineComposable>
-                        </DebugContainerComposable>
-                        <DebugContainerComposable>
-                          <DebugHeadlineComposable>Headline 1.3.3.3.2</DebugHeadlineComposable>
-                        </DebugContainerComposable>
-                        <DebugContainerComposable>
-                          <DebugHeadlineComposable>Headline 1.3.3.3.3</DebugHeadlineComposable>
-                        </DebugContainerComposable>
-                      </DebugContainerComposable>
-                    </DebugContainerComposable>
-                  </DebugContainerComposable>
-                </DebugContainerComposable>
-              </DebugContainerComposable>
-            </DebugContainerComposable>
-          </DebugContainerComposable>
-        </DebugContainerComposable>
-
-        <!-- Component 2 -->
-        <DebugContainerComposable>
-          <DebugHeadlineComposable>Headline 2</DebugHeadlineComposable>
-        </DebugContainerComposable>
-
-        <!-- Component 3 -->
-        <DebugContainerComposable>
-          <DebugHeadlineComposable>Headline 3</DebugHeadlineComposable>
-        </DebugContainerComposable>
-      </DebugContainerComposable>
-    </DebugContainerComposable>
-
-    <!-- composable example end -->
+        <ArticleContentContainer>
+          <div>
+            <DebugHeadline>More Articles</DebugHeadline>
+          </div>
+          <div class="columns-3">
+            <ArticleContentContainer>
+              <DebugHeadline>Article 1</DebugHeadline>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat, sed diam voluptua.
+              </p>
+            </ArticleContentContainer>
+            <ArticleContentContainer>
+              <DebugHeadline>Article 2</DebugHeadline>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat, sed diam voluptua.
+              </p>
+            </ArticleContentContainer>
+            <ArticleContentContainer>
+              <DebugHeadline>Article 3</DebugHeadline>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat, sed diam voluptua.
+              </p>
+            </ArticleContentContainer>
+          </div>
+        </ArticleContentContainer>
+      </ArticleContentContainer>
+    </ArticleContentContainer>
 
     <GithubCorner :url="GITHUB_URL" />
   </div>
 </template>
 
 <script setup>
-import DebugContainer from '@/components/DebugContainer.vue';
 import DebugHeadline from '@/components/DebugHeadline.vue';
-import DebugContainerComposable from '@/components/composable/DebugContainer.vue';
-import DebugHeadlineComposable from '@/components/composable/DebugHeadline.vue';
 import GithubCorner from './components/GithubCorner.vue';
+import ArticleContentContainer from './components/ArticleContentContainer.vue';
+import DefaultContentContainer from './components/DefaultContentContainer.vue';
 
 const GITHUB_URL = import.meta.env.VITE_GITHUB_URL;
 </script>
 
-<style scoped>
+<style>
+:root {
+  --factor: calc(1 / 2);
+}
+
 h1 {
-  font-size: 90px;
+  font-size: calc(90px * var(--factor));
 }
 
 h2 {
-  font-size: 80px;
+  font-size: calc(80px * var(--factor));
 }
 
 h3 {
-  font-size: 70px;
+  font-size: calc(70px * var(--factor));
 }
 
 h4 {
-  font-size: 50px;
+  font-size: calc(50px * var(--factor));
 }
 
 [data-debug] {
-  padding: 40px 10px;
-  margin: 40px 10px;
+  padding: 20px 10px;
+  margin: 20px 10px;
+}
+
+.columns-3 {
+  display: flex;
+  gap: 10px;
+
+  & > * {
+    flex: 1;
+  }
+}
+
+.gallery {
+  display: flex;
+  gap: 10px;
+
+  & > * {
+    flex: 1;
+    height: 100px;
+    background-color: #ccc;
+  }
 }
 </style>

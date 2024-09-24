@@ -1,0 +1,4 @@
+.vscode
+eslint.config.js
+eslint.ignores.js
+commitlint.config.mjs

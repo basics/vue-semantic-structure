@@ -6,7 +6,7 @@
 Optionally, the component [`<ContentHeadline>`](../components/content-headline) can also be used as a wrapper.  
 :::
 
-`useContentHEadline()` is used to display the headline structure.
+`useContentHeadline()` is used to display the headline structure.
 
 Example: `h1`, `h2`, `h3`, `h4`, `h5`, `h6`
 

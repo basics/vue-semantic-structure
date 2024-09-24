@@ -3,6 +3,7 @@
   "version": "1.0.0-next.2",
   "description": "Helper for semantic HTML structure.",
   "license": "MIT",
+  "private": true,
   "author": {
     "name": "Thorn-Welf Walli",
     "email": "lammpee@gmail.com"
@@ -25,6 +26,9 @@
     }
   },
   "main": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "prepack": "unbuild",
     "dev": "vite playground",
