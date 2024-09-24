@@ -23,17 +23,3 @@ Install `vue-semantic-structure` as a dependency to your project:
   ```
 
 :::
-
-## Usage
-
-You can find uses in the following sections:
-
-**Components**
-
-- [ContentContainer](/components/content-container)
-- [ContentHeadline](/components/content-headline)
-
-**Composables:**
-
-- [useContentContainer](/composables/use-content-container)
-- [useContentHeadline](/composables/use-content-headline)
