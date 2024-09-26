@@ -13,7 +13,7 @@
 [![License][license-src]][license-href]
 
 - [✨ &nbsp;&nbsp;**Release Notes**](./CHANGELOG.md)
-- [👁 &nbsp;&nbsp;**Example**](https://basics.github.io/vue-semantic-structure/example)
+- [👁 &nbsp;&nbsp;**Example**](https://basics.github.io/vue-semantic-structure/playground)
 
 ## Getting Started
 
