@@ -20,11 +20,13 @@
   "type": "module",
   "exports": {
     ".": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js"
-    }
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./ContentContainer.vue": "./dist/ContentContainer.vue",
+    "./ContentHeadline.vue": "./dist/ContentHeadline.vue"
   },
-  "main": "./dist/index.js",
+  "main": "./dist/index.cjs",
   "files": [
     "dist"
   ],
