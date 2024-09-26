@@ -1,5 +1,12 @@
 # Project Changelog
 
+# [1.0.0-next.9](https://github.com/basics/vue-semantic-structure/compare/v1.0.0-next.8...v1.0.0-next.9) (2024-09-26)
+
+
+### Bug Fixes
+
+* **build:** update build config ([0846c10](https://github.com/basics/vue-semantic-structure/commit/0846c10404beb7eb865fb494d0e73007562305ef))
+
 # [1.0.0-next.8](https://github.com/basics/vue-semantic-structure/compare/v1.0.0-next.7...v1.0.0-next.8) (2024-09-26)
 
 
