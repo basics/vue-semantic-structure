@@ -1,5 +1,12 @@
 # Project Changelog
 
+# [1.0.0-next.7](https://github.com/basics/vue-semantic-structure/compare/v1.0.0-next.6...v1.0.0-next.7) (2024-09-26)
+
+
+### Bug Fixes
+
+* **ci-next:** disable husky ([06ae100](https://github.com/basics/vue-semantic-structure/commit/06ae10060eea013a64b5da1e5a78d59a948b38ab))
+
 # [1.0.0-next.6](https://github.com/basics/vue-semantic-structure/compare/v1.0.0-next.5...v1.0.0-next.6) (2024-09-26)
 
 
