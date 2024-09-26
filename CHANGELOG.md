@@ -1,5 +1,12 @@
 # Project Changelog
 
+# [1.0.0-next.10](https://github.com/basics/vue-semantic-structure/compare/v1.0.0-next.9...v1.0.0-next.10) (2024-09-26)
+
+
+### Bug Fixes
+
+* **src:** remove extension ([a4cd229](https://github.com/basics/vue-semantic-structure/commit/a4cd229b934310b78074ed2098108e336f54500a))
+
 # [1.0.0-next.9](https://github.com/basics/vue-semantic-structure/compare/v1.0.0-next.8...v1.0.0-next.9) (2024-09-26)
 
 
