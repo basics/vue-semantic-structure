@@ -60,6 +60,11 @@ Tag for the element.
     </ContentContainer>
   </ContentContainer>
 </template>
+
+<script setup>
+import ContentContainer from 'vue-semantic-structure/ContentContainer.vue';
+import ContentHeadline from 'vue-semantic-structure/ContentHeadline.vue';
+</script>
 ```
 
 ```html

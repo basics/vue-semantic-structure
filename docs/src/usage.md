@@ -20,6 +20,10 @@ The main structure is in the `<main>` tag, which contains the main components.
     <ContentContainer class="gallery">…</ContentContainer>
   </ContentContainer>
 </template>
+
+<script setup>
+import ContentContainer from 'vue-semantic-structure/ContentContainer.vue';
+</script>
 ```
 
 ```html [HTML]
@@ -52,7 +56,7 @@ It is recommended to create a separate component that extends the `ContentContai
 </template>
 
 <script setup>
-import { ContentContainer } from 'vue-semantic-structure';
+import ContentContainer from 'vue-semantic-structure/ContentContainer.vue';
 </script>
 ```
 
@@ -70,6 +74,10 @@ In comparison to the basic application, the entire content is enclosed in anothe
     </CustomContentContainer>
   </CustomContentContainer>
 </template>
+
+<script setup>
+import ContentContainer from 'vue-semantic-structure/ContentContainer.vue';
+</script>
 ```
 
 ```html [HTML]

@@ -7,7 +7,7 @@
 
 <script setup>
 import { inject } from 'vue';
-import { ContentHeadline } from 'vue-semantic-structure';
+import ContentHeadline from 'vue-semantic-structure/ContentHeadline.vue';
 
 const debug = inject('debugHeadings', false);
 </script>

@@ -12,7 +12,7 @@
 
 <script setup>
 import { inject, provide } from 'vue';
-import { ContentContainer } from 'vue-semantic-structure';
+import ContentContainer from 'vue-semantic-structure/ContentContainer.vue';
 
 const props = defineProps({
   debug: {

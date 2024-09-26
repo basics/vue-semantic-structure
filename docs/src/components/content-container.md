@@ -83,6 +83,11 @@ Can be used to overwrite the level.
     </ContentContainer>
   </ContentContainer>
 </template>
+
+<script setup>
+import ContentContainer from 'vue-semantic-structure/ContentContainer.vue';
+import ContentHeadline from 'vue-semantic-structure/ContentHeadline.vue';
+</script>
 ```
 
 ```html
