@@ -18,7 +18,7 @@
 
 <script>
 import { inject } from 'vue';
-import useContentContainer from './useContentContainer.js';
+import useContentContainer from './useContentContainer';
 
 export default {
   inheritAttrs: false,

@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import useContentHeadline from './useContentHeadline.js';
+import useContentHeadline from './useContentHeadline';
 
 export default {
   inheritAttrs: false,
