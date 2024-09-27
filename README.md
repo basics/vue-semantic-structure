@@ -4,7 +4,7 @@
 
 [![main][github-workflow-main-src]][github-workflow-main-href]
 [![next][github-workflow-next-src]][github-workflow-next-href]
-[![Sonarcloud Status][sonarcloud-src]][sonarcloud-href]
+<!-- [![Sonarcloud Status][sonarcloud-src]][sonarcloud-href] -->
 
 [![npm version][npm-version-latest-src]][npm-version-latest-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
@@ -53,8 +53,6 @@ Please follow the [📖 &nbsp;&nbsp;**Documentation**](https://basics.github.io/
 [github-workflow-next-src]: <https://github.com/basics/vue-semantic-structure/workflows/Next/badge.svg?branch=next>
 [github-workflow-next-href]: <https://github.com/basics/vue-semantic-structure/actions?query=workflow%3ANext>
 
-[sonarcloud-src]: <https://sonarcloud.io/api/project_badges/measure?project=basics_vue-semantic-structure&metric=alert_status>
-[sonarcloud-href]: <https://sonarcloud.io/dashboard?id=basics_vue-semantic-structure>
 
 [license-src]: https://img.shields.io/npm/l/vue-semantic-structure.svg?style=flat-square
 [license-href]: https://npmjs.com/package/vue-semantic-structure
