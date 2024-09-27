@@ -129,8 +129,7 @@ describe('useContentHeadline (rootTags)', () => {
 describe('useContentHeadline (contentTags)', () => {
   test('Structure Value Check', () => {
     const ContentContainer = defineComponent({
-      template: `<component :is="currentTag" :data-current-tag="currentTag" :data-current-level="currentLevel" :data-parent-level="parentLevel"><slot /></component>
-        <slot v-else />`,
+      template: `<component :is="currentTag" :data-current-tag="currentTag" :data-current-level="currentLevel" :data-parent-level="parentLevel"><slot /></component>`,
       setup() {
         const { currentTag, currentLevel, parentLevel } = useContentContainer({
           rootTags: ['ul'],
