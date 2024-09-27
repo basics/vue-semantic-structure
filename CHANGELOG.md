@@ -1,5 +1,12 @@
 # Project Changelog
 
+# [1.0.0-next.15](https://github.com/basics/vue-semantic-structure/compare/v1.0.0-next.14...v1.0.0-next.15) (2024-09-27)
+
+
+### Bug Fixes
+
+* **publish:** force publish ([748f157](https://github.com/basics/vue-semantic-structure/commit/748f157b597b11b8fc8716a4157d805145cd6693))
+
 # [1.0.0-next.14](https://github.com/basics/vue-semantic-structure/compare/v1.0.0-next.13...v1.0.0-next.14) (2024-09-27)
 
 
