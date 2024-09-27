@@ -1,5 +1,12 @@
 # Project Changelog
 
+# [1.0.0-next.13](https://github.com/basics/vue-semantic-structure/compare/v1.0.0-next.12...v1.0.0-next.13) (2024-09-27)
+
+
+### Bug Fixes
+
+* **package:** added homepage ([680a8a2](https://github.com/basics/vue-semantic-structure/commit/680a8a257f10499fab4bc117f9c06b83574a633b))
+
 # [1.0.0-next.12](https://github.com/basics/vue-semantic-structure/compare/v1.0.0-next.11...v1.0.0-next.12) (2024-09-27)
 
 
