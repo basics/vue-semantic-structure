@@ -1,5 +1,12 @@
 # Project Changelog
 
+# [1.0.0-next.12](https://github.com/basics/vue-semantic-structure/compare/v1.0.0-next.11...v1.0.0-next.12) (2024-09-27)
+
+
+### Bug Fixes
+
+* **naming:** fix naming… ([2838031](https://github.com/basics/vue-semantic-structure/commit/28380314724c54e8e6a4751759cb6eb95b19d206))
+
 # [1.0.0-next.11](https://github.com/basics/vue-semantic-structure/compare/v1.0.0-next.10...v1.0.0-next.11) (2024-09-27)
 
 
