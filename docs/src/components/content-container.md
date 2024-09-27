@@ -18,13 +18,6 @@ The appropriate HTML element for the page structure is determined based on the `
 
 ## Properties
 
-### abstract
-
-- Type: `Boolean`
-- Default: `false`
-
-If set, the heading is rendered as an abstract heading. (e.g. `<slot />`)
-
 ### tag
 
 - Type: `String`
@@ -35,7 +28,7 @@ Tag for the element.
 ### rootTags
 
 - Type: `Array`
-- Default: `inject('rootTags', ['main'])`
+- Default: `inject('semanticRelease_rootTags', ['main'])`
 
 Available tags for the root structure.
 
@@ -44,7 +37,7 @@ Available tags for the root structure.
 ### contentTags
 
 - Type: `Array`
-- Default: `inject('contentTags', ['article', 'section'])`
+- Default: `inject('semanticRelease_contentTags', ['article', 'section'])`
 
 Available tags for the content structure.
 
@@ -56,6 +49,13 @@ Available tags for the content structure.
 - Default: `undefined`
 
 Can be used to overwrite the level.
+
+### debug
+
+- Type: `Boolean`
+- Default: `inject('semanticRelease_debug', false)`
+
+If set, the following attributes are set on the element: `data-current-tag`, `data-current-level` and `data-parent-level`.
 
 ## v-slot
 
@@ -85,8 +85,7 @@ Can be used to overwrite the level.
 </template>
 
 <script setup>
-import ContentContainer from 'vue-semantic-structure/ContentContainer.vue';
-import ContentHeadline from 'vue-semantic-structure/ContentHeadline.vue';
+import { ContentContainer, ContentHeadline } from 'vue-semantic-structure';
 </script>
 ```
 

@@ -1,14 +1,14 @@
 import { mount } from '@vue/test-utils';
 import { describe, expect, test } from 'vitest';
 import { defineComponent } from 'vue';
-import ContentHeadline from '../src/ContentHeadline.vue';
-import ContentContainer from '../src/ContentContainer.vue';
+import ContentContainer from '../src/ContentContainer';
+import ContentHeadline from '../src/ContentHeadline';
 
 describe('contentHeadline', () => {
   test('Structure Value Check', () => {
     const DebugContentHeadline = defineComponent({
       components: { ContentHeadline },
-      template: `<ContentHeadline abstract v-slot="{currentTag, currentLevel, parentLevel}"><component :is="currentTag" :data-current-tag="currentTag" :data-current-level="currentLevel":data-parent-level="parentLevel">{{ currentTag }}</component></ContentHeadline>`
+      template: `<ContentHeadline v-slot="{ currentTag }">{{ currentTag }}</ContentHeadline>`
     });
 
     const root = defineComponent({

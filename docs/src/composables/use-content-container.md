@@ -34,12 +34,12 @@ const { currentTag } = useContentContainer()
 
 ## Options
 
-| Property      | Type     | Description                               | Default Value            |
-| ------------- | -------- | ----------------------------------------- | ------------------------ |
-| `tag`         | `String` | Can be used to overwrite the tag.         | `undefined`              |
-| `contentTags` | `Array`  | Available tags for the content structure. | `['section', 'article']` |
-| `rootTags`    | `Array`  | Available tags for the root structure.    | `['main', undefined]`    |
-| `level`       | `Number` | Can be used to overwrite the level.       | `undefined`              |
+| Property      | Type     | Description                               | Default Value                                                   |
+| ------------- | -------- | ----------------------------------------- | --------------------------------------------------------------- |
+| `tag`         | `String` | Can be used to overwrite the tag.         | `undefined`                                                     |
+| `contentTags` | `Array`  | Available tags for the content structure. | `inject('semanticRelease_contentTags', ['article', 'section'])` |
+| `rootTags`    | `Array`  | Available tags for the root structure.    | `inject('semanticRelease_rootTags', ['main'])`                  |
+| `level`       | `Number` | Can be used to overwrite the level.       | `undefined`                                                     |
 
 ## Return
 

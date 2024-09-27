@@ -22,7 +22,7 @@ The main structure is in the `<main>` tag, which contains the main components.
 </template>
 
 <script setup>
-import ContentContainer from 'vue-semantic-structure/ContentContainer.vue';
+import { ContentContainer } from 'vue-semantic-structure';
 </script>
 ```
 
@@ -56,7 +56,7 @@ It is recommended to create a separate component that extends the `ContentContai
 </template>
 
 <script setup>
-import ContentContainer from 'vue-semantic-structure/ContentContainer.vue';
+import { ContentContainer } from 'vue-semantic-structure';
 </script>
 ```
 
@@ -76,7 +76,7 @@ In comparison to the basic application, the entire content is enclosed in anothe
 </template>
 
 <script setup>
-import ContentContainer from 'vue-semantic-structure/ContentContainer.vue';
+import { ContentContainer } from 'vue-semantic-structure';
 </script>
 ```
 

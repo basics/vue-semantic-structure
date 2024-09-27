@@ -60,8 +60,7 @@ If `ContentContainer` is level 2, `ContentHeadline` level 2 is rendered as `h2`.
 </template>
 
 <script setup>
-import ContentContainer from 'vue-semantic-structure/ContentContainer.vue';
-import ContentHeadline from 'vue-semantic-structure/ContentHeadline.vue';
+import { ContentContainer, ContentHeadline } from 'vue-semantic-structure';
 </script>
 ```
 

@@ -20,19 +20,19 @@ The deeper the nesting, the smaller the heading.
 
 ## Properties
 
-### abstract
-
-- Type: `Boolean`
-- Default: `false`
-
-If set, the heading is rendered as an abstract heading. (e.g. `<slot />`)
-
 ### tag
 
 - Type: `String`
 - Default: `null`
 
 Tag for the element.
+
+### debug
+
+- Type: `Boolean`
+- Default: `inject('semanticRelease_debug', false)`
+
+If set, the following attributes are set on the element: `data-current-tag`, `data-current-level` and `data-parent-level`.
 
 ## v-slot
 
@@ -62,8 +62,7 @@ Tag for the element.
 </template>
 
 <script setup>
-import ContentContainer from 'vue-semantic-structure/ContentContainer.vue';
-import ContentHeadline from 'vue-semantic-structure/ContentHeadline.vue';
+import { ContentContainer, ContentHeadline } from 'vue-semantic-structure';
 </script>
 ```
 

@@ -22,9 +22,7 @@
     ".": {
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
-    },
-    "./ContentContainer.vue": "./dist/ContentContainer.vue",
-    "./ContentHeadline.vue": "./dist/ContentHeadline.vue"
+    }
   },
   "main": "./dist/index.cjs",
   "files": [

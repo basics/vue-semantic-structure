@@ -7,8 +7,7 @@ import useContentHeadline from '../src/useContentHeadline';
 describe('useContentHeadline', () => {
   test('Structure Value Check', () => {
     const ContentContainer = defineComponent({
-      template: `<component v-if="currentTag" :is="currentTag" :data-current-tag="currentTag" :data-current-level="currentLevel" :data-parent-level="parentLevel"><slot /></component>
-        <slot v-else />`,
+      template: `<component :is="currentTag" :data-current-tag="currentTag" :data-current-level="currentLevel" :data-parent-level="parentLevel"><slot /></component>`,
       setup() {
         const { currentTag, currentLevel, parentLevel } = useContentContainer();
         return { currentTag, currentLevel, parentLevel };
@@ -66,8 +65,7 @@ describe('useContentHeadline', () => {
 describe('useContentHeadline (rootTags)', () => {
   test('Structure Value Check', () => {
     const ContentContainer = defineComponent({
-      template: `<component v-if="currentTag" :is="currentTag" :data-current-tag="currentTag" :data-current-level="currentLevel" :data-parent-level="parentLevel"><slot /></component>
-        <slot v-else />`,
+      template: `<component :is="currentTag" :data-current-tag="currentTag" :data-current-level="currentLevel" :data-parent-level="parentLevel"><slot /></component>`,
       setup() {
         const { currentTag, currentLevel, parentLevel } = useContentContainer({
           rootTags: ['main', 'article']
@@ -77,7 +75,7 @@ describe('useContentHeadline (rootTags)', () => {
     });
 
     const ContentHeadline = defineComponent({
-      template: '<component :is="currentTag" :data-level="level">{{currentTag}}</component>',
+      template: '<component :is="currentTag" :data-level="level">{{ currentTag }}</component>',
       setup() {
         const { currentTag, level } = useContentHeadline();
         return { currentTag, level };
@@ -110,7 +108,6 @@ describe('useContentHeadline (rootTags)', () => {
     });
 
     const wrapper = mount(root);
-
     expect(wrapper.find('main > article > h1').text()).toBe(String('h1'));
     expect(wrapper.find('main > article > section > h2').text()).toBe(String('h2'));
     expect(wrapper.find('main > article > section > article > h3').text()).toBe(String('h3'));
@@ -132,7 +129,7 @@ describe('useContentHeadline (rootTags)', () => {
 describe('useContentHeadline (contentTags)', () => {
   test('Structure Value Check', () => {
     const ContentContainer = defineComponent({
-      template: `<component v-if="currentTag" :is="currentTag" :data-current-tag="currentTag" :data-current-level="currentLevel" :data-parent-level="parentLevel"><slot /></component>
+      template: `<component :is="currentTag" :data-current-tag="currentTag" :data-current-level="currentLevel" :data-parent-level="parentLevel"><slot /></component>
         <slot v-else />`,
       setup() {
         const { currentTag, currentLevel, parentLevel } = useContentContainer({
