@@ -11,6 +11,7 @@
     },
     {
       "name": "next",
+      "channel": "latest",
       "prerelease": true
     }
   ],
