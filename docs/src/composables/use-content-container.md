@@ -37,8 +37,8 @@ const { currentTag } = useContentContainer()
 | Property      | Type     | Description                               | Default Value                                                   |
 | ------------- | -------- | ----------------------------------------- | --------------------------------------------------------------- |
 | `tag`         | `String` | Can be used to overwrite the tag.         | `undefined`                                                     |
-| `contentTags` | `Array`  | Available tags for the content structure. | `inject('semanticRelease_contentTags', ['article', 'section'])` |
-| `rootTags`    | `Array`  | Available tags for the root structure.    | `inject('semanticRelease_rootTags', ['main'])`                  |
+| `contentTags` | `Array`  | Available tags for the content structure. | `inject('semanticStructure_contentTags', ['article', 'section'])` |
+| `rootTags`    | `Array`  | Available tags for the root structure.    | `inject('semanticStructure_rootTags', ['main'])`                  |
 | `level`       | `Number` | Can be used to overwrite the level.       | `undefined`                                                     |
 
 ## Return

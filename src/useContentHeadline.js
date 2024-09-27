@@ -1,8 +1,8 @@
 import { inject, computed } from 'vue';
 
 export default function useContentHeadline({ tag } = {}) {
-  const parentLevel = inject('semanticRelease_parentLevel', 1) + 1;
-  const rootLevel = inject('semanticRelease_rootLevel', 1);
+  const parentLevel = inject('semanticStructure_parentLevel', 1) + 1;
+  const rootLevel = inject('semanticStructure_rootLevel', 1);
 
   const currentLevel = computed(() => getMax(parentLevel - rootLevel));
   const currentTag = computed(() => tag || `h${currentLevel.value}`);

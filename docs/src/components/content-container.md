@@ -28,7 +28,7 @@ Tag for the element.
 ### rootTags
 
 - Type: `Array`
-- Default: `inject('semanticRelease_rootTags', ['main'])`
+- Default: `inject('semanticStructure_rootTags', ['main'])`
 
 Available tags for the root structure.
 
@@ -37,7 +37,7 @@ Available tags for the root structure.
 ### contentTags
 
 - Type: `Array`
-- Default: `inject('semanticRelease_contentTags', ['article', 'section'])`
+- Default: `inject('semanticStructure_contentTags', ['article', 'section'])`
 
 Available tags for the content structure.
 
@@ -53,7 +53,7 @@ Can be used to overwrite the level.
 ### debug
 
 - Type: `Boolean`
-- Default: `inject('semanticRelease_debug', false)`
+- Default: `inject('semanticStructure_debug', false)`
 
 If set, the following attributes are set on the element: `data-current-tag`, `data-current-level` and `data-parent-level`.
 

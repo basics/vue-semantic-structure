@@ -30,7 +30,7 @@ Tag for the element.
 ### debug
 
 - Type: `Boolean`
-- Default: `inject('semanticRelease_debug', false)`
+- Default: `inject('semanticStructure_debug', false)`
 
 If set, the following attributes are set on the element: `data-current-tag`, `data-current-level` and `data-parent-level`.
 

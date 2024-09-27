@@ -11,13 +11,13 @@ const ContentContainer = {
     rootTags: {
       type: Array,
       default() {
-        return inject('semanticRelease_rootTags', ['main']);
+        return inject('semanticStructure_rootTags', ['main']);
       }
     },
     contentTags: {
       type: Array,
       default() {
-        return inject('semanticRelease_contentTags', ['article', 'section']);
+        return inject('semanticStructure_contentTags', ['article', 'section']);
       }
     },
     level: {
@@ -27,14 +27,14 @@ const ContentContainer = {
     debug: {
       type: Boolean,
       default() {
-        return inject('semanticRelease_debug', false);
+        return inject('semanticStructure_debug', false);
       }
     }
   },
 
   setup(props) {
     const { parentLevel, currentLevel, currentTag } = useContentContainer(props);
-    provide('semanticRelease_debug', props.debug);
+    provide('semanticStructure_debug', props.debug);
     return { parentLevel, currentLevel, currentTag };
   },
 

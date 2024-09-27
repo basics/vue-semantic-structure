@@ -11,7 +11,7 @@ const ContentHeadline = {
     debug: {
       type: Boolean,
       default() {
-        return inject('semanticRelease_debug', false);
+        return inject('semanticStructure_debug', false);
       }
     }
   },
