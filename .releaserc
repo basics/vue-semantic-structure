@@ -6,10 +6,6 @@
       "prerelease": false
     },
     {
-      "name": "beta",
-      "prerelease": true
-    },
-    {
       "name": "next",
       "prerelease": true
     }
