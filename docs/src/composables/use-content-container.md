@@ -25,9 +25,9 @@ The appropriate HTML element for the page structure is determined based on the `
 </template>
 
 <script setup>
-import { useContentContainer } from 'vue-semantic-structure'
+import { useContentContainer } from 'vue-semantic-structure';
 
-const { currentTag } = useContentContainer()
+const { currentTag } = useContentContainer();
 </script>
 
 ```
