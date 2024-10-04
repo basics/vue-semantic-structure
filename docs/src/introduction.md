@@ -29,9 +29,9 @@ The `ContentHeadline` takes the level from the `ContentContainer` and sets the a
 
 ## Example
 
-If `ContentContainer` is level 2, `ContentHeadline` level 2 is rendered as `h2`.
+::: code-group
 
-```vue
+```vue [Vue]
 <template>
   <div>
     <header>Header</header>
@@ -52,6 +52,9 @@ If `ContentContainer` is level 2, `ContentHeadline` level 2 is rendered as `h2`.
         <ContentHeadline> Secondary Headline 2 (h2) </ContentHeadline>
         <ContentContainer>
           <ContentHeadline> Tertiary Headline 2.1 (h3) </ContentHeadline>
+        <ContentContainer>
+          <ContentHeadline> Tertiary Headline 2.1.1 (h4) </ContentHeadline>
+        </ContentContainer>
         </ContentContainer>
       </ContentContainer>
     </ContentContainer>
@@ -64,7 +67,7 @@ import { ContentContainer, ContentHeadline } from 'vue-semantic-structure';
 </script>
 ```
 
-```html
+```html [HTML]
 <div>
   <header>Header</header>
   <main>
@@ -84,9 +87,14 @@ import { ContentContainer, ContentHeadline } from 'vue-semantic-structure';
       <h2> Secondary Headline 2 (h2) </h2>
       <section>
         <h3> Tertiary Headline 2.1 (h3) </h3>
+        <article>
+          <h4> Tertiary Headline 2.1.1 (h4) </h4>
+        </article>
       </section>
     </article>
   </main>
   <footer>Footer</footer>
 </div>
 ```
+
+:::

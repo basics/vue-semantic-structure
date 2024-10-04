@@ -26,9 +26,9 @@ The deeper the nesting, the smaller the heading.
 </template>
 
 <script setup>
-import { useContentContainer } from 'vue-semantic-structure'
+import { useContentHeadline } from 'vue-semantic-structure';
 
-const { currentTag } = useContentHeadline()
+const { currentTag } = useContentHeadline();
 </script>
 
 ```
