@@ -27,6 +27,10 @@ export default {
         { text: 'ContentHeadline', link: '/components/content-headline' },
         { text: 'ContentContainer', link: '/components/content-container' }
       ]
+    },
+    {
+      text: 'Integration',
+      items: [{ text: 'Nuxt 3', link: '/integration/nuxt-3' }]
     }
   ],
 
