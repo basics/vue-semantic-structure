@@ -48,9 +48,9 @@ Please follow the [📖 &nbsp;&nbsp;**Documentation**](https://basics.github.io/
 [renovate-status-src]: <https://img.shields.io/badge/renovate-enabled-brightgreen>
 [renovate-status-href]: <https://renovate.whitesourcesoftware.com/>
 
-[github-workflow-main-src]: <https://github.com/basics/vue-semantic-structure/workflows/Main/badge.svg?branch=main>
+[github-workflow-main-src]: <https://github.com/basics/vue-semantic-structure/workflows/Main/badge.svg>
 [github-workflow-main-href]: <https://github.com/basics/vue-semantic-structure/actions?query=workflow%3AMain>
-[github-workflow-next-src]: <https://github.com/basics/vue-semantic-structure/workflows/Next/badge.svg?branch=next>
+[github-workflow-next-src]: <https://github.com/basics/vue-semantic-structure/workflows/Next/badge.svg>
 [github-workflow-next-href]: <https://github.com/basics/vue-semantic-structure/actions?query=workflow%3ANext>
 
 
