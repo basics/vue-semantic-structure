@@ -118,7 +118,7 @@ A plugin must be created in the project for this.
 
 ::: code-group
 
-```js[Nuxt 3: plugin/vue-semantic-structure.js]
+```js[plugin/vue-semantic-structure.js]
 import { defineNuxtPlugin } from 'nuxt/app';
 import { ContentHeadline, ContentContainer } from 'vue-semantic-structure';
 
@@ -132,4 +132,4 @@ export default defineNuxtPlugin({
 
 :::
 
-[Learn more about Nuxt Plugin](https://nuxt.com/docs/guide/directory-structure/plugins)
+[Learn more about Nuxt Plugins](https://nuxt.com/docs/guide/directory-structure/plugins)
