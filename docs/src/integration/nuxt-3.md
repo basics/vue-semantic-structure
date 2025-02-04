@@ -76,6 +76,11 @@ import { ContentHeadline } from 'vue-semantic-structure'
   <ContentContainer>
     <!-- h2 -->
     <ContentHeadline>Headline</ContentHeadline>
+    <!-- section -->
+    <ContentContainer>
+      <!-- h3 -->
+      <ContentHeadline>Headline</ContentHeadline>
+    </ContentContainer>
   </ContentContainer>
 </template>
 
@@ -90,6 +95,11 @@ import { ContentContainer, ContentHeadline } from 'vue-semantic-structure'
   <ContentContainer>
     <!-- h2 -->
     <ContentHeadline>Headline</ContentHeadline>
+    <!-- section -->
+    <ContentContainer>
+      <!-- h3 -->
+      <ContentHeadline>Headline</ContentHeadline>
+    </ContentContainer>
   </ContentContainer>
 </template>
 
@@ -104,7 +114,7 @@ import { ContentContainer, ContentHeadline } from 'vue-semantic-structure'
 
 `ContentHeadline` and `ContentContainer` can also be defined globally.
 
-Only one plugin needs to be created for this.
+A plugin must be created in the project for this.
 
 ::: code-group
 
@@ -121,3 +131,5 @@ export default defineNuxtPlugin({
 ```
 
 :::
+
+[Learn more about Nuxt Plugin](https://nuxt.com/docs/guide/directory-structure/plugins)
