@@ -8,7 +8,7 @@ export type Options = {
 };
 
 export type Result = {
-  parentLevel: number;
+  parentLevel: ComputedRef<number>;
   currentLevel: ComputedRef<number>;
   currentTag: ComputedRef<string>;
 };
@@ -22,14 +22,14 @@ export default function useContentContainer({ tag, contentTags, rootTags, level 
   provide('semanticStructure_rootTags', rootTags);
   provide('semanticStructure_contentTags', contentTags);
 
-  const parentLevel = inject('semanticStructure_parentLevel', 0);
-  const currentLevel = computed(() => (level !== undefined ? level : parentLevel + 1));
+  const parentLevel = computed(() => inject('semanticStructure_parentLevel', 0));
+  const currentLevel = computed(() => (level !== undefined ? level : parentLevel.value + 1));
   const currentTag = computed(() => {
     if (tag) {
       return tag;
     }
-    if (Number(parentLevel) in rootTags) {
-      return rootTags[Number(parentLevel)];
+    if (Number(parentLevel.value) in rootTags) {
+      return rootTags[Number(parentLevel.value)];
     }
     return contentTags[currentLevel.value % contentTags.length];
   });

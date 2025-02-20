@@ -35,13 +35,28 @@ const { currentTag } = useContentHeadline();
 
 ## Options
 
-| Property | Type     | Description         | Default Value |
-| -------- | -------- | ------------------- | ------------- |
-| `tag`    | `String` | Tag for the element | `undefined`   |
+```ts
+type Options = {
+  tag?: string | undefined;
+};
+```
+
+| Property | Type                  | Description         | Default Value |
+| -------- | --------------------- | ------------------- | ------------- |
+| `tag`    | `String`\|`undefined` | Tag for the element | `undefined`   |
 
 ## Return
 
-| Property       | Type     | Description           |
-| -------------- | -------- | --------------------- |
-| `currentTag`   | `String` | Get current html tag. |
-| `currentLevel` | `Number` | Get current level.    |
+```ts
+type Return = {
+  parentLevel: ComputedRef<number>;
+  currentLevel: ComputedRef<number>;
+  currentTag: ComputedRef<string>;
+};
+```
+
+| Property       | Type                   | Description           |
+| -------------- | ---------------------- | --------------------- |
+| `parentLevel`  | `ComputedRef<Number>;` | Get parent level.     |
+| `currentLevel` | `ComputedRef<Number>`  | Get current level.    |
+| `currentTag`   | `ComputedRef<String>`  | Get current html tag. |

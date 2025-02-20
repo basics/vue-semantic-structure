@@ -4,17 +4,17 @@ export type Options = {
   tag?: string | undefined;
 };
 
-export type Result = {
-  parentLevel: number;
+export type Return = {
+  parentLevel: ComputedRef<number>;
   currentLevel: ComputedRef<number>;
   currentTag: ComputedRef<string>;
 };
 
-export default function useContentHeadline({ tag }: Options = {}): Result {
-  const parentLevel = inject('semanticStructure_parentLevel', 1) + 1;
+export default function useContentHeadline({ tag }: Options = {}): Return {
+  const parentLevel = computed(() => inject('semanticStructure_parentLevel', 1) + 1);
   const rootLevel = inject('semanticStructure_rootLevel', 1);
 
-  const currentLevel = computed(() => getMax(parentLevel - rootLevel));
+  const currentLevel = computed(() => getMax(parentLevel.value - rootLevel));
   const currentTag = computed(() => tag || `h${currentLevel.value}`);
 
   return {
