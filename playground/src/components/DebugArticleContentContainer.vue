@@ -13,7 +13,7 @@
   </ContentContainer>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { inject, provide } from 'vue';
 import { ContentContainer } from 'vue-semantic-structure';
 

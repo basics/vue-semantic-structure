@@ -1,0 +1,50 @@
+{
+  "extends": [
+    "@tsconfig/node22/tsconfig.json",
+    "@vue/tsconfig/tsconfig.json"
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "module": "ESNext",
+    "target": "ESNext",
+    "outDir": "./dist",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "paths": {
+      "@/*": [
+        "./playground/src/*"
+      ],
+      "@@/*": [
+        "./*"
+      ],
+      "vue-semantic-structure": [
+        "./src/index.ts"
+      ]
+    },
+    "types": [
+      "vue",
+      "node"
+    ],
+    "jsx": "preserve",
+    "lib": [
+      "dom",
+      "esnext"
+    ],
+    "jsxImportSource": "vue"
+  },
+  "include": [
+    "src/**/*.ts",
+    "playground/**/*.ts",
+    "test/**/*.ts",
+    "types/**/*.vue",
+    "docs/**/*.vue",
+    "docs/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts"
+  ]
+}

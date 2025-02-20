@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [vue()],
   test: {
     environment: 'jsdom',
-    include: ['test/*.test.js'],
+    include: ['test/*.test.ts'],
     testTimeout: 60_000,
     hookTimeout: 140_000
   }

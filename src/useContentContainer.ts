@@ -1,7 +1,20 @@
-import { provide, inject, computed } from 'vue';
+import { provide, inject, computed, type ComputedRef } from 'vue';
 
-export default function useContentContainer({ tag, contentTags, rootTags, level } = {}) {
-  tag = tag || null;
+export type Options = {
+  tag?: string | undefined;
+  rootTags?: string[];
+  contentTags?: string[];
+  level?: number;
+};
+
+export type Result = {
+  parentLevel: number;
+  currentLevel: ComputedRef<number>;
+  currentTag: ComputedRef<string>;
+};
+
+export default function useContentContainer({ tag, contentTags, rootTags, level }: Options = {}): Result {
+  tag = tag || undefined;
   rootTags = rootTags || inject('semanticStructure_rootTags', ['main']);
   contentTags = contentTags || inject('semanticStructure_contentTags', ['article', 'section']);
   level = level || undefined;

@@ -1,7 +1,18 @@
-import { h, inject } from 'vue';
+import { defineComponent, h, inject, type ComponentOptions } from 'vue';
 import useContentHeadline from './useContentHeadline';
 
-const ContentHeadline = {
+export type Props = {
+  tag: string;
+  debug: boolean;
+};
+
+export type Context = Props & {
+  parentLevel: number;
+  currentLevel: number;
+  currentTag: string;
+};
+
+const ContentHeadline = defineComponent({
   name: 'ContentHeadline',
   props: {
     tag: {
@@ -21,7 +32,7 @@ const ContentHeadline = {
     return { parentLevel, currentLevel, currentTag };
   },
 
-  render() {
+  render(this: Context & ComponentOptions) {
     const { currentTag, currentLevel } = this;
     return h(
       currentTag,
@@ -38,9 +49,9 @@ const ContentHeadline = {
       }
     );
   }
-};
+});
 
-const getDebugAttrs = context => {
+const getDebugAttrs = (context: Context) => {
   if (context.debug) {
     return {
       'data-current-tag': context.currentTag,
