@@ -36,7 +36,7 @@ const { currentTag } = useContentContainer();
 
 ```ts
 type ContentContainerOptions = {
-  tag?: string | undefined;
+  tag?: string;
   contentTags?: Array<string>;
   rootTags?: Array<string>;
   level?: number;

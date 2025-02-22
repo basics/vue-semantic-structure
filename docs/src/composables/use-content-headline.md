@@ -37,7 +37,7 @@ const { currentTag } = useContentHeadline();
 
 ```ts
 type ContentHeadlineOptions = {
-  tag?: string | undefined;
+  tag?: string;
 };
 ```
 

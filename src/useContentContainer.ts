@@ -1,7 +1,7 @@
 import { provide, inject, computed, type ComputedRef } from 'vue';
 
 export type ContentContainerOptions = {
-  tag?: string | undefined;
+  tag?: string;
   rootTags?: string[];
   contentTags?: string[];
   level?: number;

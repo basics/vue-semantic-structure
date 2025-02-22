@@ -1,7 +1,7 @@
 import { inject, computed, type ComputedRef } from 'vue';
 
 export type ContentHeadlineOptions = {
-  tag?: string | undefined;
+  tag?: string;
 };
 
 export type ContentHeadlineReturn = {
