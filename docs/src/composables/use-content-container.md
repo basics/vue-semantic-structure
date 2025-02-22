@@ -34,6 +34,15 @@ const { currentTag } = useContentContainer();
 
 ## Options
 
+```ts
+type ContentContainerOptions = {
+  tag?: string | undefined;
+  contentTags?: Array<string>;
+  rootTags?: Array<string>;
+  level?: number;
+};
+```
+
 | Property      | Type     | Description                               | Default Value                                                   |
 | ------------- | -------- | ----------------------------------------- | --------------------------------------------------------------- |
 | `tag`         | `String` | Can be used to overwrite the tag.         | `undefined`                                                     |
@@ -43,8 +52,16 @@ const { currentTag } = useContentContainer();
 
 ## Return
 
-| Property       | Type     | Description           |
-| -------------- | -------- | --------------------- |
-| `currentTag`   | `String` | Get current html tag. |
-| `parentLevel`  | `Number` | Get parent level.     |
-| `currentLevel` | `Number` | Get current level.    |
+```ts
+type ContentContainerReturn = {
+  parentLevel: ComputedRef<number>;
+  currentLevel: ComputedRef<number>;
+  currentTag: ComputedRef<string>;
+};
+```
+
+| Property       | Type                   | Description           |
+| -------------- | ---------------------- | --------------------- |
+| `parentLevel`  | `ComputedRef<Number>;` | Get parent level.     |
+| `currentLevel` | `ComputedRef<Number>`  | Get current level.    |
+| `currentTag`   | `ComputedRef<String>`  | Get current html tag. |

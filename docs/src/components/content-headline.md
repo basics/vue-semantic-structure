@@ -20,6 +20,13 @@ The deeper the nesting, the smaller the heading.
 
 ## Properties
 
+```ts
+type Props = {
+  tag: string;
+  debug: boolean;
+};
+```
+
 ### tag
 
 - Type: `String`

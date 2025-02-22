@@ -18,6 +18,16 @@ The appropriate HTML element for the page structure is determined based on the `
 
 ## Properties
 
+```ts
+type Props = {
+  tag?: string;
+  rootTags?: string[];
+  contentTags?: string[];
+  level?: number;
+  debug?: boolean;
+};
+```
+
 ### tag
 
 - Type: `String`
@@ -27,7 +37,7 @@ Tag for the element.
 
 ### rootTags
 
-- Type: `Array`
+- Type: `Array<String>`
 - Default: `inject('semanticStructure_rootTags', ['main'])`
 
 Available tags for the root structure.
@@ -36,7 +46,7 @@ Available tags for the root structure.
 
 ### contentTags
 
-- Type: `Array`
+- Type: `Array<String>`
 - Default: `inject('semanticStructure_contentTags', ['article', 'section'])`
 
 Available tags for the content structure.

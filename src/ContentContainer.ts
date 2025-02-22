@@ -1,7 +1,21 @@
-import { h, inject, provide } from 'vue';
+import { defineComponent, h, inject, provide, type ComponentOptions } from 'vue';
 import useContentContainer from './useContentContainer';
 
-const ContentContainer = {
+export type Props = {
+  tag?: string;
+  rootTags?: string[];
+  contentTags?: string[];
+  level?: number;
+  debug?: boolean;
+};
+
+export type Context = Props & {
+  parentLevel: number;
+  currentLevel: number;
+  currentTag: string;
+};
+
+const ContentContainer = defineComponent({
   name: 'ContentContainer',
   props: {
     tag: {
@@ -32,14 +46,15 @@ const ContentContainer = {
     }
   },
 
-  setup(props) {
+  setup(props: Props) {
     const { parentLevel, currentLevel, currentTag } = useContentContainer(props);
     provide('semanticStructure_debug', props.debug);
     return { parentLevel, currentLevel, currentTag };
   },
 
-  render() {
+  render(this: Context & ComponentOptions) {
     const { currentTag, parentLevel, currentLevel } = this;
+
     return h(
       currentTag,
       {
@@ -56,9 +71,9 @@ const ContentContainer = {
       }
     );
   }
-};
+});
 
-const getDebugAttrs = context => {
+const getDebugAttrs = (context: Context) => {
   if (context.debug) {
     return {
       'data-current-tag': context.currentTag,

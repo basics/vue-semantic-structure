@@ -120,17 +120,19 @@
       </DebugArticleContentContainer>
     </DebugArticleContentContainer>
 
-    <GithubCorner :url="GITHUB_URL" />
+    <GithubCorner :url="githubUrl" />
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import DebugHeadline from '@/components/DebugHeadline.vue';
-import GithubCorner from './components/GithubCorner.vue';
-import DebugArticleContentContainer from './components/DebugArticleContentContainer.vue';
-import DebugContainer from './components/DebugContainer.vue';
+import GithubCorner from '@/components/GithubCorner.vue';
+import DebugArticleContentContainer from '@/components/DebugArticleContentContainer.vue';
+import DebugContainer from '@/components/DebugContainer.vue';
+import { ref } from 'vue';
+import { getGithubUrl } from './utils';
 
-const GITHUB_URL = import.meta.env.VITE_GITHUB_URL;
+const githubUrl = ref(getGithubUrl());
 </script>
 
 <style>

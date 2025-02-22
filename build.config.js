@@ -14,8 +14,8 @@ export default defineBuildConfig({
         jsxFactory: 'h'
       }
     },
-    { builder: 'mkdist', input: './src', pattern: ['**/*.js'], format: 'cjs', loaders: ['js'], ext: 'cjs' },
-    { builder: 'mkdist', input: './src', pattern: ['**/*.js'], format: 'esm', loaders: ['js'], ext: 'js' }
+    { builder: 'mkdist', input: './src', pattern: ['**/*.ts'], format: 'cjs', loaders: ['js'], ext: 'cjs' },
+    { builder: 'mkdist', input: './src', pattern: ['**/*.ts'], format: 'esm', loaders: ['js'], ext: 'js' }
   ],
   declaration: true,
   clean: true,

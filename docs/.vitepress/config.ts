@@ -1,21 +1,9 @@
-// import { defineConfig } from 'vitepress';
-
-// // https://vitepress.dev/reference/site-config
-// export default defineConfig({
-//   title: 'Vue Semantic Structure',
-//   description: 'Helper for semantic HTML structure.',
-//   themeConfig: {
-//     // https://vitepress.dev/reference/default-theme-config
-//   }
-// });
-
 import { fileURLToPath } from 'url';
-import { defineConfig } from 'vitepress';
+import { DefaultTheme, defineConfig, ThemeOptions, UserConfig } from 'vitepress';
 import markdownItInlineComments from 'markdown-it-inline-comments';
 import navigation from './navigation.js';
 
-// https://vitepress.dev/reference/site-config
-export default defineConfig(() => ({
+export default defineConfig({
   head: [
     ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' }],
 
@@ -68,7 +56,12 @@ export default defineConfig(() => ({
   sitemap: {
     hostname: 'https://basics.github.io/vue-semantic-structure/'
   }
-}));
+} as UserConfig<DefaultTheme.Config> & {
+  themeConfig: ThemeOptions & {
+    logoComponent: boolean;
+    socialLinks: { icon: string; link: string }[];
+  };
+});
 
 function getBaseUrl() {
   return process.env.npm_config_base_url || process.env.BASE_URL || '/';
