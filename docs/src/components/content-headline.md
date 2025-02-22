@@ -21,7 +21,7 @@ The deeper the nesting, the smaller the heading.
 ## Properties
 
 ```ts
-type Props = {
+type ContentHeadlineProps = {
   tag: string;
   debug: boolean;
 };

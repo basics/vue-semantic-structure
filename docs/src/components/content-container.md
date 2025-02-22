@@ -19,7 +19,7 @@ The appropriate HTML element for the page structure is determined based on the `
 ## Properties
 
 ```ts
-type Props = {
+type ContentContainerProps = {
   tag?: string;
   rootTags?: string[];
   contentTags?: string[];
