@@ -1,5 +1,12 @@
 # Project Changelog
 
+## [1.0.2](https://github.com/basics/vue-semantic-structure/compare/v1.0.1...v1.0.2) (2025-02-22)
+
+
+### Bug Fixes
+
+* **typescript:** renamed types ([fe22a32](https://github.com/basics/vue-semantic-structure/commit/fe22a3262d9ddba4f0145286c15439810dcdc361))
+
 ## [1.0.1](https://github.com/basics/vue-semantic-structure/compare/v1.0.0...v1.0.1) (2025-02-22)
 
 
