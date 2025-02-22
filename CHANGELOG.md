@@ -1,5 +1,12 @@
 # Project Changelog
 
+## [1.0.1](https://github.com/basics/vue-semantic-structure/compare/v1.0.0...v1.0.1) (2025-02-22)
+
+
+### Bug Fixes
+
+* **typescript:** added typescript support ([5566785](https://github.com/basics/vue-semantic-structure/commit/55667853e344b0ea521acf1b1d7ff897316654ab))
+
 # 1.0.0 (2024-10-06)
 
 
