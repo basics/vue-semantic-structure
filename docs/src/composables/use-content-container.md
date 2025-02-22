@@ -35,7 +35,7 @@ const { currentTag } = useContentContainer();
 ## Options
 
 ```ts
-type Options = {
+type ContentContainerOptions = {
   tag?: string | undefined;
   contentTags?: Array<string>;
   rootTags?: Array<string>;
@@ -53,7 +53,7 @@ type Options = {
 ## Return
 
 ```ts
-type Return = {
+type ContentContainerReturn = {
   parentLevel: ComputedRef<number>;
   currentLevel: ComputedRef<number>;
   currentTag: ComputedRef<string>;

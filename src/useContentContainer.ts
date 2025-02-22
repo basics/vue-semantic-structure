@@ -1,19 +1,24 @@
 import { provide, inject, computed, type ComputedRef } from 'vue';
 
-export type Options = {
+export type ContentContainerOptions = {
   tag?: string | undefined;
   rootTags?: string[];
   contentTags?: string[];
   level?: number;
 };
 
-export type Result = {
+export type ContentContainerResult = {
   parentLevel: ComputedRef<number>;
   currentLevel: ComputedRef<number>;
   currentTag: ComputedRef<string>;
 };
 
-export default function useContentContainer({ tag, contentTags, rootTags, level }: Options = {}): Result {
+export default function useContentContainer({
+  tag,
+  contentTags,
+  rootTags,
+  level
+}: ContentContainerOptions = {}): ContentContainerResult {
   tag = tag || undefined;
   rootTags = rootTags || inject('semanticStructure_rootTags', ['main']);
   contentTags = contentTags || inject('semanticStructure_contentTags', ['article', 'section']);

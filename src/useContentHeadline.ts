@@ -1,16 +1,16 @@
 import { inject, computed, type ComputedRef } from 'vue';
 
-export type Options = {
+export type ContentHeadlineOptions = {
   tag?: string | undefined;
 };
 
-export type Return = {
+export type ContentHeadlineReturn = {
   parentLevel: ComputedRef<number>;
   currentLevel: ComputedRef<number>;
   currentTag: ComputedRef<string>;
 };
 
-export default function useContentHeadline({ tag }: Options = {}): Return {
+export default function useContentHeadline({ tag }: ContentHeadlineOptions = {}): ContentHeadlineReturn {
   const parentLevel = computed(() => inject('semanticStructure_parentLevel', 1) + 1);
   const rootLevel = inject('semanticStructure_rootLevel', 1);
 

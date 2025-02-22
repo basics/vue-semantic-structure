@@ -15,10 +15,10 @@ describe('useContentHeadline', () => {
     });
 
     const ContentHeadline = defineComponent({
-      template: '<component :is="currentTag" :data-level="level">{{currentTag}}</component>',
+      template: '<component :is="currentTag" :data-level="currentLevel">{{currentTag}}</component>',
       setup() {
-        const { currentTag, level } = useContentHeadline();
-        return { currentTag, level };
+        const { currentTag, currentLevel } = useContentHeadline();
+        return { currentTag, currentLevel };
       }
     });
 
@@ -75,10 +75,10 @@ describe('useContentHeadline (rootTags)', () => {
     });
 
     const ContentHeadline = defineComponent({
-      template: '<component :is="currentTag" :data-level="level">{{ currentTag }}</component>',
+      template: '<component :is="currentTag" :data-level="currentLevel">{{ currentTag }}</component>',
       setup() {
-        const { currentTag, level } = useContentHeadline();
-        return { currentTag, level };
+        const { currentTag, currentLevel } = useContentHeadline();
+        return { currentTag, currentLevel };
       }
     });
 
@@ -140,10 +140,10 @@ describe('useContentHeadline (contentTags)', () => {
     });
 
     const ContentHeadline = defineComponent({
-      template: '<component :is="currentTag" :data-level="level">{{currentTag}}</component>',
+      template: '<component :is="currentTag" :data-level="currentLevel">{{currentTag}}</component>',
       setup() {
-        const { currentTag, level } = useContentHeadline();
-        return { currentTag, level };
+        const { currentTag, currentLevel } = useContentHeadline();
+        return { currentTag, currentLevel };
       }
     });
 

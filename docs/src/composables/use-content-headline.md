@@ -36,7 +36,7 @@ const { currentTag } = useContentHeadline();
 ## Options
 
 ```ts
-type Options = {
+type ContentHeadlineOptions = {
   tag?: string | undefined;
 };
 ```
@@ -48,7 +48,7 @@ type Options = {
 ## Return
 
 ```ts
-type Return = {
+type ContentHeadlineReturn = {
   parentLevel: ComputedRef<number>;
   currentLevel: ComputedRef<number>;
   currentTag: ComputedRef<string>;
