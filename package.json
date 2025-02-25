@@ -68,11 +68,11 @@
     "stylelint-config-recess-order": "6.0.0",
     "stylelint-config-standard": "37.0.0",
     "typescript": "5.7.3",
-    "typescript-eslint": "8.24.1",
+    "typescript-eslint": "8.25.0",
     "unbuild": "3.3.1",
-    "vite": "6.1.1",
+    "vite": "6.2.0",
     "vitepress": "1.6.3",
-    "vitest": "3.0.6",
+    "vitest": "3.0.7",
     "vue": "3.5.13"
   }
 }
