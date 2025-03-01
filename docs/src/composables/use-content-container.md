@@ -32,7 +32,7 @@ const { currentTag } = useContentContainer();
 
 ```
 
-## Type
+## Types
 
 ```ts
 function useContentContainer(options?: ContentContainerOptions): ContentContainerReturn;

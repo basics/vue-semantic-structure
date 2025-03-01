@@ -18,7 +18,7 @@ The level of the heading is taken from the `ContentContainer`.
 
 The deeper the nesting, the smaller the heading.
 
-## Type
+## Types
 
 ```ts
 declare interface ContentHeadlineProps {

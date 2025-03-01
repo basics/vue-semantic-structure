@@ -33,7 +33,7 @@ const { currentTag } = useContentHeadline();
 
 ```
 
-## Type
+## Types
 
 ```ts
 function useContentHeadline(options?: ContentHeadlineOptions): ContentHeadlineReturn;

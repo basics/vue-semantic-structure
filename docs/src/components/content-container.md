@@ -16,7 +16,7 @@ With each nested `ContentContainer` the element structure becomes one level deep
 
 The appropriate HTML element for the page structure is determined based on the `level`. (e.g. `main`, `article`, `section`)
 
-## Type
+## Types
 
 ```ts
 
