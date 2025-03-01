@@ -18,13 +18,19 @@ The level of the heading is taken from the `ContentContainer`.
 
 The deeper the nesting, the smaller the heading.
 
-## Properties
+## Type
 
 ```ts
-type ContentHeadlineProps = {
+declare interface ContentHeadlineProps {
   tag: string;
   debug: boolean;
-};
+}
+
+declare interface ContentHeadlineContext extends ContentHeadlineProps {
+  parentLevel: number;
+  currentLevel: number;
+  currentTag: string;
+}
 ```
 
 ### tag

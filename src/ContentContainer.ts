@@ -1,19 +1,19 @@
 import { defineComponent, h, inject, provide, type ComponentOptions } from 'vue';
 import useContentContainer from './useContentContainer';
 
-export type ContentContainerProps = {
+export interface ContentContainerProps {
   tag?: string;
   rootTags?: string[];
   contentTags?: string[];
   level?: number;
   debug?: boolean;
-};
+}
 
-export type ContentContainerContext = ContentContainerProps & {
+export interface ContentContainerContext extends ContentContainerProps {
   parentLevel: number;
   currentLevel: number;
   currentTag: string;
-};
+}
 
 const ContentContainer = defineComponent({
   name: 'ContentContainer',
