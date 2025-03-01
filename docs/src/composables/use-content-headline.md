@@ -36,7 +36,7 @@ const { currentTag } = useContentHeadline();
 ## Types
 
 ```ts
-function useContentHeadline(options?: ContentHeadlineOptions): ContentHeadlineReturn;
+declare function useContentHeadline(options?: ContentHeadlineOptions): ContentHeadlineReturn;
 
 declare interface ContentHeadlineOptions {
   tag?: string;

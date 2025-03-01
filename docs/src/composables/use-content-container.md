@@ -35,7 +35,7 @@ const { currentTag } = useContentContainer();
 ## Types
 
 ```ts
-function useContentContainer(options?: ContentContainerOptions): ContentContainerReturn;
+declare function useContentContainer(options?: ContentContainerOptions): ContentContainerReturn;
 
 declare interface ContentContainerOptions {
   tag?: string;
