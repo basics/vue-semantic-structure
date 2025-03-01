@@ -1,16 +1,16 @@
 import { defineComponent, h, inject, type ComponentOptions } from 'vue';
 import useContentHeadline from './useContentHeadline';
 
-export type ContentHeadlineProps = {
+export interface ContentHeadlineProps {
   tag: string;
   debug: boolean;
-};
+}
 
-export type ContentHeadlineContext = ContentHeadlineProps & {
+export interface ContentHeadlineContext extends ContentHeadlineProps {
   parentLevel: number;
   currentLevel: number;
   currentTag: string;
-};
+}
 
 const ContentHeadline = defineComponent({
   name: 'ContentHeadline',

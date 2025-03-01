@@ -3,18 +3,14 @@ import { defineBuildConfig } from 'unbuild';
 export default defineBuildConfig({
   entries: [
     {
-      input: './src',
       builder: 'mkdist',
-      pattern: ['**/*.vue'],
-      addRelativeDeclarationExtensions: true,
-      ext: 'js',
-      esbuild: {
-        jsxImportSource: 'vue',
-        jsx: 'automatic',
-        jsxFactory: 'h'
-      }
+      input: './src',
+      pattern: ['**/*.ts'],
+      declaration: false,
+      format: 'cjs',
+      loaders: ['js'],
+      ext: 'cjs'
     },
-    { builder: 'mkdist', input: './src', pattern: ['**/*.ts'], format: 'cjs', loaders: ['js'], ext: 'cjs' },
     { builder: 'mkdist', input: './src', pattern: ['**/*.ts'], format: 'esm', loaders: ['js'], ext: 'js' }
   ],
   declaration: true,

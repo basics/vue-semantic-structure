@@ -32,16 +32,26 @@ const { currentTag } = useContentContainer();
 
 ```
 
-## Options
+## Type
 
 ```ts
-type ContentContainerOptions = {
-  tag?: string | undefined;
+function useContentContainer(options?: ContentContainerOptions): ContentContainerReturn;
+
+declare interface ContentContainerOptions {
+  tag?: string;
   contentTags?: Array<string>;
   rootTags?: Array<string>;
   level?: number;
-};
+}
+
+declare interface ContentContainerReturn {
+  parentLevel: ComputedRef<number>;
+  currentLevel: ComputedRef<number>;
+  currentTag: ComputedRef<string>;
+}
 ```
+
+## Options
 
 | Property      | Type     | Description                               | Default Value                                                   |
 | ------------- | -------- | ----------------------------------------- | --------------------------------------------------------------- |
@@ -50,15 +60,7 @@ type ContentContainerOptions = {
 | `rootTags`    | `Array`  | Available tags for the root structure.    | `inject('semanticStructure_rootTags', ['main'])`                  |
 | `level`       | `Number` | Can be used to overwrite the level.       | `undefined`                                                     |
 
-## Return
-
-```ts
-type ContentContainerReturn = {
-  parentLevel: ComputedRef<number>;
-  currentLevel: ComputedRef<number>;
-  currentTag: ComputedRef<string>;
-};
-```
+## Result
 
 | Property       | Type                   | Description           |
 | -------------- | ---------------------- | --------------------- |

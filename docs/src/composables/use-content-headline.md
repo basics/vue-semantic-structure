@@ -33,27 +33,29 @@ const { currentTag } = useContentHeadline();
 
 ```
 
-## Options
+## Type
 
 ```ts
-type ContentHeadlineOptions = {
-  tag?: string | undefined;
-};
+function useContentHeadline(options?: ContentHeadlineOptions): ContentHeadlineReturn;
+
+declare interface ContentHeadlineOptions {
+  tag?: string;
+}
+
+declare interface ContentHeadlineReturn {
+  parentLevel: ComputedRef<number>;
+  currentLevel: ComputedRef<number>;
+  currentTag: ComputedRef<string>;
+}
 ```
+
+## Options
 
 | Property | Type                  | Description         | Default Value |
 | -------- | --------------------- | ------------------- | ------------- |
 | `tag`    | `String`\|`undefined` | Tag for the element | `undefined`   |
 
-## Return
-
-```ts
-type ContentHeadlineReturn = {
-  parentLevel: ComputedRef<number>;
-  currentLevel: ComputedRef<number>;
-  currentTag: ComputedRef<string>;
-};
-```
+## Result
 
 | Property       | Type                   | Description           |
 | -------------- | ---------------------- | --------------------- |

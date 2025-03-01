@@ -1,14 +1,14 @@
 import { inject, computed, type ComputedRef } from 'vue';
 
-export type ContentHeadlineOptions = {
+export interface ContentHeadlineOptions {
   tag?: string | undefined;
-};
+}
 
-export type ContentHeadlineReturn = {
+export interface ContentHeadlineReturn {
   parentLevel: ComputedRef<number>;
   currentLevel: ComputedRef<number>;
   currentTag: ComputedRef<string>;
-};
+}
 
 export default function useContentHeadline({ tag }: ContentHeadlineOptions = {}): ContentHeadlineReturn {
   const parentLevel = computed(() => inject('semanticStructure_parentLevel', 1) + 1);

@@ -16,17 +16,26 @@ With each nested `ContentContainer` the element structure becomes one level deep
 
 The appropriate HTML element for the page structure is determined based on the `level`. (e.g. `main`, `article`, `section`)
 
-## Properties
+## Type
 
 ```ts
-type ContentContainerProps = {
+
+declare interface ContentContainerProps {
   tag?: string;
   rootTags?: string[];
   contentTags?: string[];
   level?: number;
   debug?: boolean;
-};
+}
+
+declare interface ContentContainerContext extends ContentContainerProps {
+  parentLevel: number;
+  currentLevel: number;
+  currentTag: string;
+}
 ```
+
+## Properties
 
 ### tag
 
