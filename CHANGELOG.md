@@ -1,5 +1,12 @@
 # Project Changelog
 
+## [1.0.3](https://github.com/basics/vue-semantic-structure/compare/v1.0.2...v1.0.3) (2025-03-01)
+
+
+### Bug Fixes
+
+* **typescript:** improve types ([56c5e6d](https://github.com/basics/vue-semantic-structure/commit/56c5e6df777088898dda96b4cfc25916a9f8bcdf))
+
 ## [1.0.2](https://github.com/basics/vue-semantic-structure/compare/v1.0.1...v1.0.2) (2025-02-22)
 
 
