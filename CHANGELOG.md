@@ -1,5 +1,12 @@
 # Project Changelog
 
+## [1.0.5](https://github.com/basics/vue-semantic-structure/compare/v1.0.4...v1.0.5) (2025-03-02)
+
+
+### Bug Fixes
+
+* **exports:** switch to named exports for better clarity ([eab8723](https://github.com/basics/vue-semantic-structure/commit/eab8723cf05f10ab67922eb82aa822f6a808dc70))
+
 ## [1.0.4](https://github.com/basics/vue-semantic-structure/compare/v1.0.3...v1.0.4) (2025-03-02)
 
 
