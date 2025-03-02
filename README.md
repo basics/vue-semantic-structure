@@ -9,6 +9,7 @@
 [![npm version][npm-version-latest-src]][npm-version-latest-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 
+[![TypeScript][typescript-badge-src]][typescript-badge-src]
 [![Renovate - Status][renovate-status-src]][renovate-status-href]
 [![License][license-src]][license-href]
 
@@ -53,6 +54,7 @@ Please follow the [📖 &nbsp;&nbsp;**Documentation**](https://basics.github.io/
 [github-workflow-next-src]: <https://github.com/basics/vue-semantic-structure/workflows/Next/badge.svg>
 [github-workflow-next-href]: <https://github.com/basics/vue-semantic-structure/actions?query=workflow%3ANext>
 
+[typescript-badge-src]: https://img.shields.io/badge/%3C%2F%3E-TypeScript-%230074c1.svg
 
 [license-src]: https://img.shields.io/npm/l/vue-semantic-structure.svg?style=flat-square
 [license-href]: https://npmjs.com/package/vue-semantic-structure
