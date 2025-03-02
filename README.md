@@ -9,7 +9,7 @@
 [![npm version][npm-version-latest-src]][npm-version-latest-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 
-[![TypeScript][typescript-badge-src]][typescript-badge-src]
+[![TypeScript][typescript-badge-src]](http://www.typescriptlang.org/)
 [![Renovate - Status][renovate-status-src]][renovate-status-href]
 [![License][license-src]][license-href]
 
