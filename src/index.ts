@@ -1,11 +1,11 @@
-export { default as ContentContainer } from './ContentContainer';
-export { default as ContentHeadline } from './ContentHeadline';
+export * from './ContentContainer';
+export * from './ContentHeadline';
 
-export type { ContentHeadlineProps, ContentHeadlineContext } from './ContentHeadline';
-export type { ContentContainerProps, ContentContainerContext } from './ContentContainer';
+export type * from './ContentHeadline';
+export type * from './ContentContainer';
 
-export { default as useContentContainer } from './useContentContainer';
-export { default as useContentHeadline } from './useContentHeadline';
+export * from './useContentContainer';
+export * from './useContentHeadline';
 
-export type { ContentContainerOptions, ContentContainerReturn } from './useContentContainer';
-export type { ContentHeadlineOptions, ContentHeadlineReturn } from './useContentHeadline';
+export type * from './useContentContainer';
+export type * from './useContentHeadline';

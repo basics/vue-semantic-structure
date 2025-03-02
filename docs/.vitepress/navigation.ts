@@ -11,7 +11,8 @@ export default {
       items: [
         { text: 'Introduction', link: '/introduction' },
         { text: 'Setup', link: '/setup' },
-        { text: 'Usage', link: '/usage' }
+        { text: 'Usage', link: '/usage' },
+        { text: 'Definitions', link: '/definitions' }
       ]
     },
     {
