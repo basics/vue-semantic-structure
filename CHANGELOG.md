@@ -1,5 +1,12 @@
 # Project Changelog
 
+## [1.0.4](https://github.com/basics/vue-semantic-structure/compare/v1.0.3...v1.0.4) (2025-03-02)
+
+
+### Bug Fixes
+
+* **docs:** add Definitions section and update navigation ([70aec3d](https://github.com/basics/vue-semantic-structure/commit/70aec3d0b6e02354136a6391eb223927227338d9))
+
 ## [1.0.3](https://github.com/basics/vue-semantic-structure/compare/v1.0.2...v1.0.3) (2025-03-01)
 
 
