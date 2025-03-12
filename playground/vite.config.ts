@@ -3,6 +3,7 @@ import vue from '@vitejs/plugin-vue';
 import path from 'path';
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
+import checker from 'vite-plugin-checker';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -10,7 +11,12 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 export default defineConfig({
   base: getBaseUrl(),
 
-  plugins: [vue()],
+  plugins: [
+    vue(),
+    checker({
+      vueTsc: true
+    })
+  ],
 
   server: {
     port: 3000
