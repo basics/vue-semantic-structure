@@ -6,7 +6,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "esModuleInterop": true,
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "module": "ESNext",
     "target": "ESNext",
     "outDir": "./dist",
