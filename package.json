@@ -72,7 +72,7 @@
     "typescript": "5.9.2",
     "typescript-eslint": "8.42.0",
     "unbuild": "3.6.1",
-    "vite": "7.1.4",
+    "vite": "7.1.11",
     "vite-plugin-checker": "0.10.3",
     "vitepress": "1.6.4",
     "vitest": "3.2.4",
