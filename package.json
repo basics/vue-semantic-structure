@@ -48,14 +48,14 @@
   },
   "devDependencies": {
     "@commitlint/config-conventional": "20.0.0",
-    "@eslint/js": "9.39.0",
+    "@eslint/js": "9.39.1",
     "@tsconfig/node22": "22.0.2",
     "@types/node": "24.10.0",
     "@vitejs/plugin-vue": "6.0.1",
     "@vue/test-utils": "2.4.6",
     "@vue/tsconfig": "0.8.1",
     "commitlint": "20.1.0",
-    "eslint": "9.39.0",
+    "eslint": "9.39.1",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-prettier": "5.5.4",
     "eslint-plugin-vue": "10.5.1",
@@ -72,11 +72,11 @@
     "typescript": "5.9.3",
     "typescript-eslint": "8.46.3",
     "unbuild": "3.6.1",
-    "vite": "7.1.12",
+    "vite": "7.2.1",
     "vite-plugin-checker": "0.11.0",
     "vitepress": "1.6.4",
-    "vitest": "4.0.6",
-    "vue": "3.5.22",
+    "vitest": "4.0.7",
+    "vue": "3.5.23",
     "vue-tsc": "3.1.3"
   }
 }
