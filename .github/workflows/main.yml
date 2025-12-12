@@ -104,7 +104,7 @@ jobs:
           BASE_URL: /vue-semantic-structure/playground/
           VITE_GITHUB_URL: https://github.com/basics/vue-semantic-structure
       - name: Archive Production Artifact
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: playgroundArtifact
           path: playground/dist
@@ -140,7 +140,7 @@ jobs:
           BASE_URL: /vue-semantic-structure/
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Archive Production Artifact
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: docsArtifact
           path: docs/.vitepress/dist
@@ -155,12 +155,12 @@ jobs:
         node: [22]
     steps:
       - name: Download Artifact (Docs)
-        uses: actions/download-artifact@v6
+        uses: actions/download-artifact@v7
         with:
           name: docsArtifact
           path: public
       - name: Download Artifact (Playground)
-        uses: actions/download-artifact@v6
+        uses: actions/download-artifact@v7
         with:
           name: playgroundArtifact
           path: public/playground
