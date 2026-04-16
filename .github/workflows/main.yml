@@ -71,10 +71,12 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           HUSKY: 0
         run: |
-          npx -p semantic-release \
-              -p @semantic-release/npm \
-              -p @semantic-release/github \
-              semantic-release
+          npx -p semantic-release  \
+            -p @semantic-release/git \
+            -p @semantic-release/changelog \
+            -p @semantic-release/exec \
+            -p @semantic-release/github \
+            semantic-release
 
   build-playground:
     name: Build (Playground)
